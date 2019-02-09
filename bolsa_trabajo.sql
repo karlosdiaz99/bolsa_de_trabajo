@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-02-2019 a las 07:53:42
+-- Tiempo de generación: 09-02-2019 a las 07:54:06
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.1.11
 
@@ -51,8 +51,8 @@ CREATE TABLE `accesos` (
 --
 
 INSERT INTO `accesos` (`id`, `nombre`, `apellido_paterno`, `apellido_materno`, `nombre_empresa`, `perfil`, `nombre_acceso`, `clave`, `num_control`, `email`, `curp`, `rfc`, `fecha_alta`, `activo`, `sesion`) VALUES
-(18, 'CARLOS IVAN', 'DIAZ', 'CONTRERAS', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', '12161263', 'KARLOSDIAZ170@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-08', 0, 0),
-(19, '', '', '', 'PANADERIA DOÃ‘A IRMA', 'empresa', 'DICC940831GA6', '70a67cfda6ec3007b11f12758bda3248', '', 'MELISSADIAZ10599@GMAIL.COM', '', 'DICC940831G', '2019-02-08', 0, 0);
+(20, 'CARLOS IVAN', 'DIAZ', 'CONTRERAS', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', '12161263', 'KARLOSDIAZ170@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-09', 0, 0),
+(21, '', '', '', 'PANADERIA DOÃ‘A IRMA', 'empresa', 'DICC940831GA6', '70a67cfda6ec3007b11f12758bda3248', '', 'MELISSADIAZ10599@GMAIL.COM', '', 'DICC940831G', '2019-02-09', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -73,7 +73,7 @@ CREATE TABLE `carreras` (
 INSERT INTO `carreras` (`id`, `nombre`, `fecha_alta`) VALUES
 (1, 'Posgrado', '2019-01-22'),
 (2, 'Doctorado en Ciencias y Desarrollo Regional y Tecnológico ', '2019-01-22'),
-(3, 'MaestrÃ­a en Administración', '2019-01-22'),
+(3, 'Maestrí­a en Administración', '2019-01-22'),
 (4, 'Maestría en Ciencias y Desarrollo Regional y Tecnológico', '2019-01-22'),
 (5, 'Maestria en Construccion', '2019-01-22'),
 (6, 'Maestría en Docencia', '2019-01-22'),
@@ -90,12 +90,12 @@ INSERT INTO `carreras` (`id`, `nombre`, `fecha_alta`) VALUES
 (17, 'Ingeniería en Gestión Empresarial(Desarrollo Empresarial)', '2019-01-22'),
 (18, 'Ingeniería Industrial(Certificaciones Internacionales de Sistemas de Gestión)', '2019-01-22'),
 (19, 'Ingenierí­a Industrial(Manufactura)', '2019-01-22'),
-(20, 'IngenierÃ­a Industrial(Herramientas para el Desarrollo Empresarial)', '2019-01-22'),
-(21, 'IngenierÃ­a MecÃ¡nica(Mantenimiento y Control de Equipos MecÃ¡nicos)', '2019-01-22'),
-(22, 'IngenierÃ­a en Sistemas Computacionales(Desarrollo de Software con TecnologÃ­as Emergentes)', '2019-01-22'),
-(23, 'IngenierÃ­a en Sistemas Computacionales(IngenierÃ­a de Software con TecnologÃ­as Emergentes)', '2019-01-22'),
-(24, 'IngenierÃ­a QuÃ­mica(Control de la ContaminaciÃ³n Ambiental)', '2019-01-22'),
-(25, 'IngenierÃ­a QuÃ­mica(Procesos de Alimentos)', '2019-01-22');
+(20, 'Ingeniería Industrial(Herramientas para el Desarrollo Empresarial)', '2019-01-22'),
+(21, 'Ingeniería Mecánica(Mantenimiento y Control de Equipos Mecánicos)', '2019-01-22'),
+(22, 'Ingeniería en Sistemas Computacionales(Desarrollo de Software con Tecnologías Emergentes)', '2019-01-22'),
+(23, 'Ingenierí­a en Sistemas Computacionales(Ingeniería de Software con Tecnologías Emergentes)', '2019-01-22'),
+(24, 'Ingeniería Quí­mica(Control de la Contaminación Ambiental)', '2019-01-22'),
+(25, 'Ingeniería Química(Procesos de Alimentos)', '2019-01-22');
 
 -- --------------------------------------------------------
 
@@ -32250,155 +32250,50 @@ CREATE TABLE `cod_lenguaje_pais` (
 --
 
 INSERT INTO `cod_lenguaje_pais` (`idx`, `cod_LP`, `descripcion`) VALUES
-(1, 'ar', 'Ã¡rabe'),
-(2, 'ar_AE', 'Ã¡rabe [Emiratos Ãrabes Unidos]'),
-(3, 'ar_BH', 'Ã¡rabe [BahrÃ¡in]'),
-(4, 'ar_DZ', 'Ã¡rabe [Argelia]'),
-(5, 'ar_EG', 'Ã¡rabe [Egipto]'),
-(6, 'ar_IQ', 'Ã¡rabe [Iraq]'),
-(7, 'ar_JO', 'Ã¡rabe [Jordania]'),
-(8, 'ar_KW', 'Ã¡rabe [Kuwait]'),
-(9, 'ar_LB', 'Ã¡rabe [LÃ­bano]'),
-(10, 'ar_LY', 'Ã¡rabe [Libia]'),
-(11, 'ar_MA', 'Ã¡rabe [Marruecos]'),
-(12, 'ar_OM', 'Ã¡rabe [OmÃ¡n]'),
-(13, 'ar_QA', 'Ã¡rabe [Qatar]'),
-(14, 'ar_SA', 'Ã¡rabe [Arabia Saudita]'),
-(15, 'ar_SD', 'Ã¡rabe [SudÃ¡n]'),
-(16, 'ar_SY', 'Ã¡rabe [Siria]'),
-(17, 'ar_TN', 'Ã¡rabe [TÃºnez]'),
-(18, 'ar_YE', 'Ã¡rabe [Yemen]'),
-(19, 'be', 'bielorruso'),
-(20, 'be_BY', 'bielorruso [Bielorrusia]'),
-(21, 'bg', 'bÃºlgaro'),
-(22, 'bg_BG', 'bÃºlgaro [Bulgaria]'),
-(23, 'ca', 'catalÃ¡n'),
-(24, 'ca_ES', 'catalÃ¡n [EspaÃ±a]'),
-(25, 'cs', 'checo'),
-(26, 'cs_CZ', 'checo [Chequia]'),
-(27, 'da', 'danÃ©s'),
-(28, 'da_DK', 'danÃ©s [Dinamarca]'),
-(29, 'de', 'alemÃ¡n'),
-(30, 'de_AT', 'alemÃ¡n [Austria]'),
-(31, 'de_CH', 'alemÃ¡n [Suiza]'),
-(32, 'de_DE', 'alemÃ¡n [Alemania]'),
-(33, 'de_LU', 'alemÃ¡n [Luxemburgo]'),
-(34, 'el', 'griego'),
-(35, 'el_CY', 'griego [Chipre]'),
-(36, 'el_GR', 'griego [Grecia]'),
-(37, 'en', 'inglÃ©s'),
-(38, 'en_AU', 'inglÃ©s [Australia]'),
-(39, 'en_CA', 'inglÃ©s [CanadÃ¡]'),
-(40, 'en_GB', 'inglÃ©s [Reino Unido]'),
-(41, 'en_IE', 'inglÃ©s [Irlanda]'),
-(42, 'en_IN', 'inglÃ©s [India]'),
-(43, 'en_MT', 'inglÃ©s [Malta]'),
-(44, 'en_NZ', 'inglÃ©s [Nueva Zelanda]'),
-(45, 'en_PH', 'inglÃ©s [Filipinas]'),
-(46, 'en_SG', 'inglÃ©s [Singapur]'),
-(47, 'en_US', 'inglÃ©s [Estados Unidos]'),
-(48, 'en_ZA', 'inglÃ©s [SudÃ¡frica]'),
-(49, 'es', 'espaÃ±ol'),
-(50, 'es_AR', 'espaÃ±ol [Argentina]'),
-(51, 'es_BO', 'espaÃ±ol [Bolivia]'),
-(52, 'es_CL', 'espaÃ±ol [Chile]'),
-(53, 'es_CO', 'espaÃ±ol [Colombia]'),
-(54, 'es_CR', 'espaÃ±ol [Costa Rica]'),
-(55, 'es_DO', 'espaÃ±ol [RepÃºblica Dominicana]'),
-(56, 'es_EC', 'espaÃ±ol [Ecuador]'),
-(57, 'es_ES', 'espaÃ±ol [EspaÃ±a]'),
-(58, 'es_GT', 'espaÃ±ol [Guatemala]'),
-(59, 'es_HN', 'espaÃ±ol [Honduras]'),
-(60, 'es_MX', 'espaÃ±ol [MÃ©xico]'),
-(61, 'es_NI', 'espaÃ±ol [Nicaragua]'),
-(62, 'es_PA', 'espaÃ±ol [PanamÃ¡]'),
-(63, 'es_PE', 'espaÃ±ol [PerÃº]'),
-(64, 'es_PR', 'espaÃ±ol [Puerto Rico]'),
-(65, 'es_PY', 'espaÃ±ol [Paraguay]'),
-(66, 'es_SV', 'espaÃ±ol [El Salvador]'),
-(67, 'es_US', 'espaÃ±ol [Estados Unidos]'),
-(68, 'es_UY', 'espaÃ±ol [Uruguay]'),
-(69, 'es_VE', 'espaÃ±ol [Venezuela]'),
-(70, 'et', 'estonio'),
-(71, 'et_EE', 'estonio [Estonia]'),
-(72, 'fi', 'finÃ©s'),
-(73, 'fi_FI', 'finÃ©s [Finlandia]'),
-(74, 'fr', 'francÃ©s'),
-(75, 'fr_BE', 'francÃ©s [BÃ©lgica]'),
-(76, 'fr_CA', 'francÃ©s [CanadÃ¡]'),
-(77, 'fr_CH', 'francÃ©s [Suiza]'),
-(78, 'fr_FR', 'francÃ©s [Francia]'),
-(79, 'fr_LU', 'francÃ©s [Luxemburgo]'),
-(80, 'ga', 'irlandÃ©s'),
-(81, 'ga_IE', 'irlandÃ©s [Irlanda]'),
-(82, 'hi_IN', 'hindÃº [India]'),
-(83, 'hr', 'croata'),
-(84, 'hr_HR', 'croata [Croacia]'),
-(85, 'hu', 'hÃºngaro'),
-(86, 'hu_HU', 'hÃºngaro [HungrÃ­a]'),
-(87, 'in', 'indonesio'),
-(88, 'in_ID', 'indonesio [Indonesia]'),
-(89, 'is', 'islandÃ©s'),
-(90, 'is_IS', 'islandÃ©s [Islandia]'),
-(91, 'it', 'italiano'),
-(92, 'it_CH', 'italiano [Suiza]'),
-(93, 'it_IT', 'italiano [Italia]'),
-(94, 'iw', 'hebreo'),
-(95, 'iw_IL', 'hebreo [Israel]'),
-(96, 'ja', 'japonÃ©s'),
-(97, 'ja_JP', 'japonÃ©s [JapÃ³n]'),
-(99, 'ko', 'coreano'),
-(100, 'ko_KR', 'coreano [Corea del Sur]'),
-(101, 'lt', 'lituano'),
-(102, 'lt_LT', 'lituano [Lituania]'),
-(103, 'lv', 'letÃ³n'),
-(104, 'lv_LV', 'letÃ³n [Letonia]'),
-(105, 'mk', 'macedonio'),
-(106, 'mk_MK', 'macedonio [Macedonia]'),
-(107, 'ms', 'malayo'),
-(108, 'ms_MY', 'malayo [Malasia]'),
-(109, 'mt', 'maltÃ©s'),
-(110, 'mt_MT', 'maltÃ©s [Malta]'),
-(111, 'nl', 'neerlandÃ©s'),
-(112, 'nl_BE', 'neerlandÃ©s [BÃ©lgica]'),
-(113, 'nl_NL', 'neerlandÃ©s [Holanda]'),
-(114, 'no', 'noruego'),
-(115, 'no_NO', 'noruego [Noruega]'),
-(117, 'pl', 'polaco'),
-(118, 'pl_PL', 'polaco [Polonia]'),
-(119, 'pt', 'portuguÃ©s'),
-(120, 'pt_BR', 'portuguÃ©s [Brasil]'),
-(121, 'pt_PT', 'portuguÃ©s [Portugal]'),
-(122, 'ro', 'rumano'),
-(123, 'ro_RO', 'rumano [Rumania]'),
-(124, 'ru', 'ruso'),
-(125, 'ru_RU', 'ruso [Rusia]'),
-(126, 'sk', 'eslovaco'),
-(127, 'sk_SK', 'eslovaco [Eslovaquia]'),
-(128, 'sl', 'eslovenio'),
-(129, 'sl_SI', 'eslovenio [Eslovenia]'),
-(130, 'sq', 'albanÃ©s'),
-(131, 'sq_AL', 'albanÃ©s [Albania]'),
-(132, 'sr', 'serbio'),
-(133, 'sr_BA', 'serbio [Bosnia y Hercegovina]'),
-(134, 'sr_CS', 'serbio [Serbia y Montenegro]'),
-(135, 'sr_ME', 'serbio [Montenegro]'),
-(136, 'sr_RS', 'serbio [Serbia]'),
-(137, 'sv', 'sueco'),
-(138, 'sv_SE', 'sueco [Suecia]'),
-(139, 'th', 'tailandÃ©s'),
-(140, 'th_TH', 'tailandÃ©s [Tailandia]'),
-(142, 'tr', 'turco'),
-(143, 'tr_TR', 'turco [TurquÃ­a]'),
-(144, 'uk', 'ucranio'),
-(145, 'uk_UA', 'ucranio [Ucrania]'),
-(146, 'vi', 'vietnamita'),
-(147, 'vi_VN', 'vietnamita [Vietnam]'),
-(148, 'zh', 'chino'),
-(149, 'zh_CN', 'chino [China]'),
-(150, 'zh_HK', 'chino [Hong Kong]'),
-(151, 'zh_SG', 'chino [Singapur]'),
-(152, 'zh_TW', 'chino [TaiwÃ¡n]');
+(1, 'ar', 'Árabe'),
+(2, 'be', 'bielorruso'),
+(3, 'be_BY', 'bielorruso [Bielorrusia]'),
+(4, 'bg', 'búlgaro'),
+(5, 'ca', 'catalán'),
+(6, 'cs', 'checo'),
+(7, 'da', 'danés'),
+(8, 'de', 'alemán'),
+(9, 'el', 'griego'),
+(10, 'en', 'inglés'),
+(11, 'es', 'español'),
+(12, 'et', 'estonio'),
+(13, 'fi', 'finés'),
+(14, 'fr', 'francés'),
+(15, 'ga', 'irlandés'),
+(16, 'hr', 'croata'),
+(17, 'hu', 'húngaro'),
+(18, 'in', 'indonesio'),
+(19, 'is', 'islandés'),
+(20, 'it', 'italiano'),
+(21, 'iw', 'hebreo'),
+(22, 'ja', 'japonés'),
+(23, 'ko', 'coreano'),
+(24, 'lt', 'lituano'),
+(25, 'lv', 'letón'),
+(26, 'mk', 'macedonio'),
+(27, 'ms', 'malayo'),
+(28, 'mt', 'maltós'),
+(29, 'nl', 'neerlandés'),
+(30, 'no', 'noruego'),
+(31, 'pl', 'polaco'),
+(32, 'pt', 'portugués'),
+(33, 'ro', 'rumano'),
+(34, 'ru', 'ruso'),
+(35, 'sk', 'eslovaco'),
+(36, 'sl', 'eslovenio'),
+(37, 'sq', 'albanés'),
+(38, 'sr', 'serbio'),
+(39, 'sv', 'sueco'),
+(40, 'th', 'tailandés'),
+(41, 'tr', 'turco'),
+(42, 'uk', 'ucranio'),
+(43, 'vi', 'vietnamita'),
+(44, 'zh', 'chino');
 
 -- --------------------------------------------------------
 
@@ -32434,7 +32329,7 @@ CREATE TABLE `curriculum` (
 --
 
 INSERT INTO `curriculum` (`id_curriculum`, `primaria`, `secundaria`, `bachillerato`, `metad1`, `metad2`, `metad3`, `metad4`, `metad5`, `empresa1`, `periodo1`, `salario1`, `empresa2`, `periodo2`, `salario2`, `empresa3`, `periodo3`, `salario3`, `curp`, `fecha_registro`) VALUES
-(5, 'VICENTE GUERRERO', 'TECNICA 152', 'COBAO 8', '19', 'equipo', '18', 'masculino', 'calculo', 'CINEPOLIS', '2010', '500', 'LOOOND', '2014', '500', 'GRUMA', '2019', '20000', 'DICC940831HOCZNR04', '2019-02-08');
+(8, 'VICENTE GUERRERO', 'TECNICA 152', 'COBAO 8', 'espaï¿½ol', 'digitales', 'Ingenierï¿½a en Sistemas Computacionales(Desarrollo de Software con Tecnologï¿½as Emergentes)', 'masculino', 'Office', 'CINEPOLIS', '2000', '5000', 'HOLA', '2014', '5214', 'GRUMA', '2019', '5874', 'DICC940831HOCZNR04', '2019-02-09');
 
 -- --------------------------------------------------------
 
@@ -32465,7 +32360,7 @@ CREATE TABLE `egresado` (
 --
 
 INSERT INTO `egresado` (`curp`, `edad`, `sexo`, `estado_civil`, `codigo_postal`, `calle`, `numero`, `colonia`, `municipio`, `estado`, `telefono`, `imagen_perfil`, `titulacion`, `generacion`, `fecha_registro`) VALUES
-('DICC940831HOCZNR04', '25', 'masculino', 'soltero', '71265', 'RIO BRAVO', '58', 'San Pablo Huixtepec', 'San Pablo Huixtepec', 'Oaxaca', '9514082266', '/imagen_perfil/OURBODY.png', 'no', '2012-2017', '2019-02-08');
+('DICC940831HOCZNR04', '25', 'masculino', 'casado', '68234', 'HALCON', '8', 'San Juan Bautista Guelache', 'San Juan Bautista Guelache', 'Oaxaca', '9514082266', '/imagen_perfil/TEC.png', 'no', '2014-2019', '2019-02-09');
 
 -- --------------------------------------------------------
 
@@ -32475,7 +32370,7 @@ INSERT INTO `egresado` (`curp`, `edad`, `sexo`, `estado_civil`, `codigo_postal`,
 
 CREATE TABLE `empresa` (
   `rfc` varchar(11) NOT NULL,
-  `razon_social` text NOT NULL,
+  `nombre_empresa` text NOT NULL,
   `giro` text NOT NULL,
   `codigo_postal` text NOT NULL,
   `numero` text NOT NULL,
@@ -32499,8 +32394,8 @@ CREATE TABLE `empresa` (
 -- Volcado de datos para la tabla `empresa`
 --
 
-INSERT INTO `empresa` (`rfc`, `razon_social`, `giro`, `codigo_postal`, `numero`, `calle`, `colonia`, `municipio`, `estado`, `responsable`, `apellido_paterno_r`, `apellido_materno_r`, `puesto_responsable`, `telefono`, `email`, `pagina_web`, `logotipo`, `convenio`, `fecha_alta`) VALUES
-('DICC940831G', 'panaderia', 'VENTA DE PRODUCTOS DE OFICINA', '68234', '58', 'gorrion', '', '', '', 'JUAN CARLOS', 'DIAZ', 'DIAZ', 'SUPERVISOR', '9514082266', '', 'WWW.DRPAPELERIAS.COM', '../Empresa/imagenes_logos/OURBODY.png', 'no', '2019-02-08');
+INSERT INTO `empresa` (`rfc`, `nombre_empresa`, `giro`, `codigo_postal`, `numero`, `calle`, `colonia`, `municipio`, `estado`, `responsable`, `apellido_paterno_r`, `apellido_materno_r`, `puesto_responsable`, `telefono`, `email`, `pagina_web`, `logotipo`, `convenio`, `fecha_alta`) VALUES
+('DICC940831G', 'PANADERIA DOÃ‘A IRMA', 'VENTA DE PRODUCTOS COMESTIBLES', '71265', '85', 'independencia', 'El Calvario', 'San Pablo Huixtepec', 'Oaxaca', 'JUAN CARLOS', 'DIAZ', 'DIAZ', 'SUPERVISOR DE VENTAS', '9514056321', '', 'WWW.PANADERIA.COM', '../Empresa/imagenes_logos/TEC.png', 'si', '2019-02-09');
 
 -- --------------------------------------------------------
 
@@ -32540,6 +32435,14 @@ CREATE TABLE `solicitud` (
   `experiencia_lab` text NOT NULL,
   `titulacion` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `solicitud`
+--
+
+INSERT INTO `solicitud` (`id_solicitud`, `rfc`, `fecha_alta`, `fecha_actualizacion`, `sueldo`, `exp_meta1`, `exp_meta2`, `exp_meta3`, `exp_meta4`, `exp_meta5`, `Estatus`, `puesto`, `requerimiento`, `experiencia_lab`, `titulacion`) VALUES
+(1, 'DICC940831G', '2019-02-09', NULL, '5000', 'croata', 'comunicativas', 'Ingenierï¿½a Civil(Administraciï¿½n de Proyectos de Construcciï¿½n)', 'femenino', 'calculo', '0', 'GERENTE GENERAL', 'QWERTYUHBVCX', 'FV', 'si'),
+(2, 'DICC940831G', '2019-02-09', NULL, 'ERTYU', 'croata', 'comunicativas', 'Ingenierï¿½ï¿½a Elï¿½ctrica(Sistemas Elï¿½ctricos de Potencia)', 'masculino', 'calculo', '0', 'SUPERVISOR DE VENTAS', 'ERTYUIOP', 'ERTYUIL', 'no');
 
 --
 -- Índices para tablas volcadas
@@ -32624,7 +32527,7 @@ ALTER TABLE `solicitud`
 -- AUTO_INCREMENT de la tabla `accesos`
 --
 ALTER TABLE `accesos`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de la tabla `cod_lenguaje_pais`
@@ -32636,19 +32539,19 @@ ALTER TABLE `cod_lenguaje_pais`
 -- AUTO_INCREMENT de la tabla `curriculum`
 --
 ALTER TABLE `curriculum`
-  MODIFY `id_curriculum` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_curriculum` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `oferta_trabajo`
 --
 ALTER TABLE `oferta_trabajo`
-  MODIFY `id_oferta_trabajo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id_oferta_trabajo` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `solicitud`
 --
 ALTER TABLE `solicitud`
-  MODIFY `id_solicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_solicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
@@ -32684,13 +32587,8 @@ ALTER TABLE `empresa`
 --
 ALTER TABLE `oferta_trabajo`
   ADD CONSTRAINT `oferta_trabajo_ibfk_1` FOREIGN KEY (`curp`) REFERENCES `egresado` (`curp`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `oferta_trabajo_ibfk_2` FOREIGN KEY (`rfc`) REFERENCES `empresa` (`rfc`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `solicitud`
---
-ALTER TABLE `solicitud`
-  ADD CONSTRAINT `solicitud_ibfk_1` FOREIGN KEY (`id_solicitud`) REFERENCES `oferta_trabajo` (`id_solicitud`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `oferta_trabajo_ibfk_2` FOREIGN KEY (`rfc`) REFERENCES `empresa` (`rfc`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `oferta_trabajo_ibfk_3` FOREIGN KEY (`id_solicitud`) REFERENCES `solicitud` (`id_solicitud`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
