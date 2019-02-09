@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-02-2019 a las 07:54:06
+-- Tiempo de generación: 09-02-2019 a las 10:40:06
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.1.11
 
@@ -46,13 +46,18 @@ CREATE TABLE `accesos` (
   `sesion` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Volcado de datos para la tabla `accesos`
+-- Estructura de tabla para la tabla `aptitudes`
 --
 
-INSERT INTO `accesos` (`id`, `nombre`, `apellido_paterno`, `apellido_materno`, `nombre_empresa`, `perfil`, `nombre_acceso`, `clave`, `num_control`, `email`, `curp`, `rfc`, `fecha_alta`, `activo`, `sesion`) VALUES
-(20, 'CARLOS IVAN', 'DIAZ', 'CONTRERAS', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', '12161263', 'KARLOSDIAZ170@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-09', 0, 0),
-(21, '', '', '', 'PANADERIA DOÃ‘A IRMA', 'empresa', 'DICC940831GA6', '70a67cfda6ec3007b11f12758bda3248', '', 'MELISSADIAZ10599@GMAIL.COM', '', 'DICC940831G', '2019-02-09', 0, 1);
+CREATE TABLE `aptitudes` (
+  `id_aptitud` int(11) NOT NULL,
+  `aptitud_meta` text NOT NULL,
+  `fecha_alta` date NOT NULL,
+  `fecha_modificacion` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -61,58 +66,42 @@ INSERT INTO `accesos` (`id`, `nombre`, `apellido_paterno`, `apellido_materno`, `
 --
 
 CREATE TABLE `carreras` (
-  `id` int(11) NOT NULL,
+  `id_carrera` int(11) NOT NULL,
   `nombre` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `fecha_alta` date NOT NULL
+  `fecha_alta` date NOT NULL,
+  `fecha_modificacion` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `carreras`
 --
 
-INSERT INTO `carreras` (`id`, `nombre`, `fecha_alta`) VALUES
-(1, 'Posgrado', '2019-01-22'),
-(2, 'Doctorado en Ciencias y Desarrollo Regional y Tecnológico ', '2019-01-22'),
-(3, 'Maestrí­a en Administración', '2019-01-22'),
-(4, 'Maestría en Ciencias y Desarrollo Regional y Tecnológico', '2019-01-22'),
-(5, 'Maestria en Construccion', '2019-01-22'),
-(6, 'Maestría en Docencia', '2019-01-22'),
-(7, 'Licenciatura en Informática', '2019-01-22'),
-(8, 'Licenciatura en Administración (Gestión Estratégica de los Negocios)', '2019-01-22'),
-(9, 'Licenciatura en Administración(Administración Estratégica de los negocios)', '2019-01-22'),
-(10, 'Ingeniería Civil(Administración de Proyectos de Construcción)', '2019-01-22'),
-(11, 'Ingeniería Civil(Infraestructura Municipal)', '2019-01-22'),
-(12, 'Ingeniería Civil(Ví­as Terrestres)', '2019-01-22'),
-(13, 'Ingenierí­a Electrónica(Telecomunicaciones)	', '2019-01-22'),
-(14, 'Ingeniería Electrónica(Comunicaciones y Electrónica)', '2019-01-22'),
-(15, 'Ingenierí­a Eléctrica(Sistemas Eléctricos de Potencia)', '2019-01-22'),
-(16, 'Ingeniería Eléctrica(Aplicaciones Industriales)', '2019-01-22'),
-(17, 'Ingeniería en Gestión Empresarial(Desarrollo Empresarial)', '2019-01-22'),
-(18, 'Ingeniería Industrial(Certificaciones Internacionales de Sistemas de Gestión)', '2019-01-22'),
-(19, 'Ingenierí­a Industrial(Manufactura)', '2019-01-22'),
-(20, 'Ingeniería Industrial(Herramientas para el Desarrollo Empresarial)', '2019-01-22'),
-(21, 'Ingeniería Mecánica(Mantenimiento y Control de Equipos Mecánicos)', '2019-01-22'),
-(22, 'Ingeniería en Sistemas Computacionales(Desarrollo de Software con Tecnologías Emergentes)', '2019-01-22'),
-(23, 'Ingenierí­a en Sistemas Computacionales(Ingeniería de Software con Tecnologías Emergentes)', '2019-01-22'),
-(24, 'Ingeniería Quí­mica(Control de la Contaminación Ambiental)', '2019-01-22'),
-(25, 'Ingeniería Química(Procesos de Alimentos)', '2019-01-22');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `catalogo_aptitudes`
---
-
-CREATE TABLE `catalogo_aptitudes` (
-  `id_catalogo` int(11) NOT NULL,
-  `aptitudes` text NOT NULL,
-  `conocimientos` text NOT NULL,
-  `sexo` text NOT NULL,
-  `carrera` text NOT NULL,
-  `idioma` text NOT NULL,
-  `curp` varchar(20) NOT NULL,
-  `rfc` varchar(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+INSERT INTO `carreras` (`id_carrera`, `nombre`, `fecha_alta`, `fecha_modificacion`) VALUES
+(1, 'Posgrado', '2019-01-22', '0000-00-00'),
+(2, 'Doctorado en Ciencias y Desarrollo Regional y Tecnológico ', '2019-01-22', '0000-00-00'),
+(3, 'Maestrí­a en Administración', '2019-01-22', '0000-00-00'),
+(4, 'Maestría en Ciencias y Desarrollo Regional y Tecnológico', '2019-01-22', '0000-00-00'),
+(5, 'Maestria en Construccion', '2019-01-22', '0000-00-00'),
+(6, 'Maestría en Docencia', '2019-01-22', '0000-00-00'),
+(7, 'Licenciatura en Informática', '2019-01-22', '0000-00-00'),
+(8, 'Licenciatura en Administración (Gestión Estratégica de los Negocios)', '2019-01-22', '0000-00-00'),
+(9, 'Licenciatura en Administración(Administración Estratégica de los negocios)', '2019-01-22', '0000-00-00'),
+(10, 'Ingeniería Civil(Administración de Proyectos de Construcción)', '2019-01-22', '0000-00-00'),
+(11, 'Ingeniería Civil(Infraestructura Municipal)', '2019-01-22', '0000-00-00'),
+(12, 'Ingeniería Civil(Ví­as Terrestres)', '2019-01-22', '0000-00-00'),
+(13, 'Ingenierí­a Electrónica(Telecomunicaciones)	', '2019-01-22', '0000-00-00'),
+(14, 'Ingeniería Electrónica(Comunicaciones y Electrónica)', '2019-01-22', '0000-00-00'),
+(15, 'Ingenierí­a Eléctrica(Sistemas Eléctricos de Potencia)', '2019-01-22', '0000-00-00'),
+(16, 'Ingeniería Eléctrica(Aplicaciones Industriales)', '2019-01-22', '0000-00-00'),
+(17, 'Ingeniería en Gestión Empresarial(Desarrollo Empresarial)', '2019-01-22', '0000-00-00'),
+(18, 'Ingeniería Industrial(Certificaciones Internacionales de Sistemas de Gestión)', '2019-01-22', '0000-00-00'),
+(19, 'Ingenierí­a Industrial(Manufactura)', '2019-01-22', '0000-00-00'),
+(20, 'Ingeniería Industrial(Herramientas para el Desarrollo Empresarial)', '2019-01-22', '0000-00-00'),
+(21, 'Ingeniería Mecánica(Mantenimiento y Control de Equipos Mecánicos)', '2019-01-22', '0000-00-00'),
+(22, 'Ingeniería en Sistemas Computacionales(Desarrollo de Software con Tecnologías Emergentes)', '2019-01-22', '0000-00-00'),
+(23, 'Ingenierí­a en Sistemas Computacionales(Ingeniería de Software con Tecnologías Emergentes)', '2019-01-22', '0000-00-00'),
+(24, 'Ingeniería Quí­mica(Control de la Contaminación Ambiental)', '2019-01-22', '0000-00-00'),
+(25, 'Ingeniería Química(Procesos de Alimentos)', '2019-01-22', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -32242,58 +32231,73 @@ INSERT INTO `codigos_postales` (`cp`, `colonia`, `municipio`, `estado`) VALUES
 CREATE TABLE `cod_lenguaje_pais` (
   `idx` int(10) UNSIGNED NOT NULL,
   `cod_LP` varchar(5) DEFAULT NULL,
-  `descripcion` varchar(60) DEFAULT NULL
+  `descripcion` varchar(60) DEFAULT NULL,
+  `fecha_alta` date NOT NULL,
+  `fecha_modificacion` date NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `cod_lenguaje_pais`
 --
 
-INSERT INTO `cod_lenguaje_pais` (`idx`, `cod_LP`, `descripcion`) VALUES
-(1, 'ar', 'Árabe'),
-(2, 'be', 'bielorruso'),
-(3, 'be_BY', 'bielorruso [Bielorrusia]'),
-(4, 'bg', 'búlgaro'),
-(5, 'ca', 'catalán'),
-(6, 'cs', 'checo'),
-(7, 'da', 'danés'),
-(8, 'de', 'alemán'),
-(9, 'el', 'griego'),
-(10, 'en', 'inglés'),
-(11, 'es', 'español'),
-(12, 'et', 'estonio'),
-(13, 'fi', 'finés'),
-(14, 'fr', 'francés'),
-(15, 'ga', 'irlandés'),
-(16, 'hr', 'croata'),
-(17, 'hu', 'húngaro'),
-(18, 'in', 'indonesio'),
-(19, 'is', 'islandés'),
-(20, 'it', 'italiano'),
-(21, 'iw', 'hebreo'),
-(22, 'ja', 'japonés'),
-(23, 'ko', 'coreano'),
-(24, 'lt', 'lituano'),
-(25, 'lv', 'letón'),
-(26, 'mk', 'macedonio'),
-(27, 'ms', 'malayo'),
-(28, 'mt', 'maltós'),
-(29, 'nl', 'neerlandés'),
-(30, 'no', 'noruego'),
-(31, 'pl', 'polaco'),
-(32, 'pt', 'portugués'),
-(33, 'ro', 'rumano'),
-(34, 'ru', 'ruso'),
-(35, 'sk', 'eslovaco'),
-(36, 'sl', 'eslovenio'),
-(37, 'sq', 'albanés'),
-(38, 'sr', 'serbio'),
-(39, 'sv', 'sueco'),
-(40, 'th', 'tailandés'),
-(41, 'tr', 'turco'),
-(42, 'uk', 'ucranio'),
-(43, 'vi', 'vietnamita'),
-(44, 'zh', 'chino');
+INSERT INTO `cod_lenguaje_pais` (`idx`, `cod_LP`, `descripcion`, `fecha_alta`, `fecha_modificacion`) VALUES
+(1, 'ar', 'Árabe', '0000-00-00', '0000-00-00'),
+(2, 'be', 'bielorruso', '0000-00-00', '0000-00-00'),
+(3, 'be_BY', 'bielorruso [Bielorrusia]', '0000-00-00', '0000-00-00'),
+(4, 'bg', 'búlgaro', '0000-00-00', '0000-00-00'),
+(5, 'ca', 'catalán', '0000-00-00', '0000-00-00'),
+(6, 'cs', 'checo', '0000-00-00', '0000-00-00'),
+(7, 'da', 'danés', '0000-00-00', '0000-00-00'),
+(8, 'de', 'alemán', '0000-00-00', '0000-00-00'),
+(9, 'el', 'griego', '0000-00-00', '0000-00-00'),
+(10, 'en', 'inglés', '0000-00-00', '0000-00-00'),
+(11, 'es', 'español', '0000-00-00', '0000-00-00'),
+(12, 'et', 'estonio', '0000-00-00', '0000-00-00'),
+(13, 'fi', 'finés', '0000-00-00', '0000-00-00'),
+(14, 'fr', 'francés', '0000-00-00', '0000-00-00'),
+(15, 'ga', 'irlandés', '0000-00-00', '0000-00-00'),
+(16, 'hr', 'croata', '0000-00-00', '0000-00-00'),
+(17, 'hu', 'húngaro', '0000-00-00', '0000-00-00'),
+(18, 'in', 'indonesio', '0000-00-00', '0000-00-00'),
+(19, 'is', 'islandés', '0000-00-00', '0000-00-00'),
+(20, 'it', 'italiano', '0000-00-00', '0000-00-00'),
+(21, 'iw', 'hebreo', '0000-00-00', '0000-00-00'),
+(22, 'ja', 'japonés', '0000-00-00', '0000-00-00'),
+(23, 'ko', 'coreano', '0000-00-00', '0000-00-00'),
+(24, 'lt', 'lituano', '0000-00-00', '0000-00-00'),
+(25, 'lv', 'letón', '0000-00-00', '0000-00-00'),
+(26, 'mk', 'macedonio', '0000-00-00', '0000-00-00'),
+(27, 'ms', 'malayo', '0000-00-00', '0000-00-00'),
+(28, 'mt', 'maltós', '0000-00-00', '0000-00-00'),
+(29, 'nl', 'neerlandés', '0000-00-00', '0000-00-00'),
+(30, 'no', 'noruego', '0000-00-00', '0000-00-00'),
+(31, 'pl', 'polaco', '0000-00-00', '0000-00-00'),
+(32, 'pt', 'portugués', '0000-00-00', '0000-00-00'),
+(33, 'ro', 'rumano', '0000-00-00', '0000-00-00'),
+(34, 'ru', 'ruso', '0000-00-00', '0000-00-00'),
+(35, 'sk', 'eslovaco', '0000-00-00', '0000-00-00'),
+(36, 'sl', 'eslovenio', '0000-00-00', '0000-00-00'),
+(37, 'sq', 'albanés', '0000-00-00', '0000-00-00'),
+(38, 'sr', 'serbio', '0000-00-00', '0000-00-00'),
+(39, 'sv', 'sueco', '0000-00-00', '0000-00-00'),
+(40, 'th', 'tailandés', '0000-00-00', '0000-00-00'),
+(41, 'tr', 'turco', '0000-00-00', '0000-00-00'),
+(42, 'uk', 'ucranio', '0000-00-00', '0000-00-00'),
+(43, 'vi', 'vietnamita', '0000-00-00', '0000-00-00'),
+(44, 'zh', 'chino', '0000-00-00', '0000-00-00');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `conocimientos`
+--
+
+CREATE TABLE `conocimientos` (
+  `id_conocimientos` int(11) NOT NULL,
+  `conocimiento_meta` text NOT NULL,
+  `fecha_alta` date NOT NULL,
+  `fecha_modificacion` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -32306,11 +32310,6 @@ CREATE TABLE `curriculum` (
   `primaria` text NOT NULL,
   `secundaria` text NOT NULL,
   `bachillerato` text NOT NULL,
-  `metad1` text NOT NULL,
-  `metad2` text NOT NULL,
-  `metad3` text NOT NULL,
-  `metad4` text NOT NULL,
-  `metad5` text NOT NULL,
   `empresa1` text,
   `periodo1` text,
   `salario1` text,
@@ -32321,15 +32320,12 @@ CREATE TABLE `curriculum` (
   `periodo3` text,
   `salario3` text,
   `curp` varchar(20) NOT NULL,
-  `fecha_registro` date NOT NULL
+  `fecha_registro` date NOT NULL,
+  `id_carrera` int(11) NOT NULL,
+  `idx` int(11) NOT NULL,
+  `id_conocimientos` int(11) NOT NULL,
+  `id_aptitud` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `curriculum`
---
-
-INSERT INTO `curriculum` (`id_curriculum`, `primaria`, `secundaria`, `bachillerato`, `metad1`, `metad2`, `metad3`, `metad4`, `metad5`, `empresa1`, `periodo1`, `salario1`, `empresa2`, `periodo2`, `salario2`, `empresa3`, `periodo3`, `salario3`, `curp`, `fecha_registro`) VALUES
-(8, 'VICENTE GUERRERO', 'TECNICA 152', 'COBAO 8', 'espaï¿½ol', 'digitales', 'Ingenierï¿½a en Sistemas Computacionales(Desarrollo de Software con Tecnologï¿½as Emergentes)', 'masculino', 'Office', 'CINEPOLIS', '2000', '5000', 'HOLA', '2014', '5214', 'GRUMA', '2019', '5874', 'DICC940831HOCZNR04', '2019-02-09');
 
 -- --------------------------------------------------------
 
@@ -32354,13 +32350,6 @@ CREATE TABLE `egresado` (
   `generacion` text NOT NULL,
   `fecha_registro` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `egresado`
---
-
-INSERT INTO `egresado` (`curp`, `edad`, `sexo`, `estado_civil`, `codigo_postal`, `calle`, `numero`, `colonia`, `municipio`, `estado`, `telefono`, `imagen_perfil`, `titulacion`, `generacion`, `fecha_registro`) VALUES
-('DICC940831HOCZNR04', '25', 'masculino', 'casado', '68234', 'HALCON', '8', 'San Juan Bautista Guelache', 'San Juan Bautista Guelache', 'Oaxaca', '9514082266', '/imagen_perfil/TEC.png', 'no', '2014-2019', '2019-02-09');
 
 -- --------------------------------------------------------
 
@@ -32390,13 +32379,6 @@ CREATE TABLE `empresa` (
   `fecha_alta` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `empresa`
---
-
-INSERT INTO `empresa` (`rfc`, `nombre_empresa`, `giro`, `codigo_postal`, `numero`, `calle`, `colonia`, `municipio`, `estado`, `responsable`, `apellido_paterno_r`, `apellido_materno_r`, `puesto_responsable`, `telefono`, `email`, `pagina_web`, `logotipo`, `convenio`, `fecha_alta`) VALUES
-('DICC940831G', 'PANADERIA DOÃ‘A IRMA', 'VENTA DE PRODUCTOS COMESTIBLES', '71265', '85', 'independencia', 'El Calvario', 'San Pablo Huixtepec', 'Oaxaca', 'JUAN CARLOS', 'DIAZ', 'DIAZ', 'SUPERVISOR DE VENTAS', '9514056321', '', 'WWW.PANADERIA.COM', '../Empresa/imagenes_logos/TEC.png', 'si', '2019-02-09');
-
 -- --------------------------------------------------------
 
 --
@@ -32424,25 +32406,16 @@ CREATE TABLE `solicitud` (
   `fecha_alta` date NOT NULL,
   `fecha_actualizacion` date DEFAULT NULL,
   `sueldo` text NOT NULL,
-  `exp_meta1` text NOT NULL,
-  `exp_meta2` text NOT NULL,
-  `exp_meta3` text NOT NULL,
-  `exp_meta4` text NOT NULL,
-  `exp_meta5` text NOT NULL,
   `Estatus` text NOT NULL,
   `puesto` text NOT NULL,
   `requerimiento` text NOT NULL,
   `experiencia_lab` text NOT NULL,
-  `titulacion` text NOT NULL
+  `titulacion` text NOT NULL,
+  `id_aptitud` int(11) NOT NULL,
+  `idx` int(11) NOT NULL,
+  `id_conocimientos` int(11) NOT NULL,
+  `id_carrera` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `solicitud`
---
-
-INSERT INTO `solicitud` (`id_solicitud`, `rfc`, `fecha_alta`, `fecha_actualizacion`, `sueldo`, `exp_meta1`, `exp_meta2`, `exp_meta3`, `exp_meta4`, `exp_meta5`, `Estatus`, `puesto`, `requerimiento`, `experiencia_lab`, `titulacion`) VALUES
-(1, 'DICC940831G', '2019-02-09', NULL, '5000', 'croata', 'comunicativas', 'Ingenierï¿½a Civil(Administraciï¿½n de Proyectos de Construcciï¿½n)', 'femenino', 'calculo', '0', 'GERENTE GENERAL', 'QWERTYUHBVCX', 'FV', 'si'),
-(2, 'DICC940831G', '2019-02-09', NULL, 'ERTYU', 'croata', 'comunicativas', 'Ingenierï¿½ï¿½a Elï¿½ctrica(Sistemas Elï¿½ctricos de Potencia)', 'masculino', 'calculo', '0', 'SUPERVISOR DE VENTAS', 'ERTYUIOP', 'ERTYUIL', 'no');
 
 --
 -- Índices para tablas volcadas
@@ -32457,18 +32430,16 @@ ALTER TABLE `accesos`
   ADD KEY `rfc` (`rfc`);
 
 --
+-- Indices de la tabla `aptitudes`
+--
+ALTER TABLE `aptitudes`
+  ADD PRIMARY KEY (`id_aptitud`);
+
+--
 -- Indices de la tabla `carreras`
 --
 ALTER TABLE `carreras`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `catalogo_aptitudes`
---
-ALTER TABLE `catalogo_aptitudes`
-  ADD PRIMARY KEY (`id_catalogo`),
-  ADD KEY `curp` (`curp`),
-  ADD KEY `rfc` (`rfc`);
+  ADD PRIMARY KEY (`id_carrera`);
 
 --
 -- Indices de la tabla `codigos_postales`
@@ -32480,16 +32451,24 @@ ALTER TABLE `codigos_postales`
 -- Indices de la tabla `cod_lenguaje_pais`
 --
 ALTER TABLE `cod_lenguaje_pais`
-  ADD PRIMARY KEY (`idx`),
-  ADD UNIQUE KEY `idx` (`idx`),
-  ADD UNIQUE KEY `cod_LP` (`cod_LP`) USING BTREE;
+  ADD PRIMARY KEY (`idx`);
+
+--
+-- Indices de la tabla `conocimientos`
+--
+ALTER TABLE `conocimientos`
+  ADD PRIMARY KEY (`id_conocimientos`);
 
 --
 -- Indices de la tabla `curriculum`
 --
 ALTER TABLE `curriculum`
   ADD PRIMARY KEY (`id_curriculum`),
-  ADD KEY `curp` (`curp`);
+  ADD KEY `curp` (`curp`),
+  ADD KEY `id_aptitud` (`id_aptitud`),
+  ADD KEY `id_conocimientos` (`id_conocimientos`),
+  ADD KEY `idx` (`idx`),
+  ADD KEY `id_carrera` (`id_carrera`);
 
 --
 -- Indices de la tabla `egresado`
@@ -32517,7 +32496,11 @@ ALTER TABLE `oferta_trabajo`
 --
 ALTER TABLE `solicitud`
   ADD PRIMARY KEY (`id_solicitud`),
-  ADD KEY `rfc` (`rfc`);
+  ADD KEY `rfc` (`rfc`),
+  ADD KEY `idx` (`idx`),
+  ADD KEY `id_aptitud` (`id_aptitud`),
+  ADD KEY `id_conocimientos` (`id_conocimientos`),
+  ADD KEY `id_carrera` (`id_carrera`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -32530,10 +32513,22 @@ ALTER TABLE `accesos`
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT de la tabla `cod_lenguaje_pais`
+-- AUTO_INCREMENT de la tabla `aptitudes`
 --
-ALTER TABLE `cod_lenguaje_pais`
-  MODIFY `idx` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
+ALTER TABLE `aptitudes`
+  MODIFY `id_aptitud` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `carreras`
+--
+ALTER TABLE `carreras`
+  MODIFY `id_carrera` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+--
+-- AUTO_INCREMENT de la tabla `conocimientos`
+--
+ALTER TABLE `conocimientos`
+  MODIFY `id_conocimientos` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `curriculum`
@@ -32558,17 +32553,13 @@ ALTER TABLE `solicitud`
 --
 
 --
--- Filtros para la tabla `catalogo_aptitudes`
---
-ALTER TABLE `catalogo_aptitudes`
-  ADD CONSTRAINT `catalogo_aptitudes_ibfk_1` FOREIGN KEY (`curp`) REFERENCES `egresado` (`curp`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `catalogo_aptitudes_ibfk_2` FOREIGN KEY (`rfc`) REFERENCES `empresa` (`rfc`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
 -- Filtros para la tabla `curriculum`
 --
 ALTER TABLE `curriculum`
-  ADD CONSTRAINT `curriculum_ibfk_1` FOREIGN KEY (`curp`) REFERENCES `egresado` (`curp`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `curriculum_ibfk_1` FOREIGN KEY (`curp`) REFERENCES `egresado` (`curp`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `curriculum_ibfk_2` FOREIGN KEY (`id_carrera`) REFERENCES `carreras` (`id_carrera`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `curriculum_ibfk_3` FOREIGN KEY (`id_conocimientos`) REFERENCES `conocimientos` (`id_conocimientos`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `curriculum_ibfk_4` FOREIGN KEY (`id_aptitud`) REFERENCES `aptitudes` (`id_aptitud`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `egresado`
@@ -32589,6 +32580,14 @@ ALTER TABLE `oferta_trabajo`
   ADD CONSTRAINT `oferta_trabajo_ibfk_1` FOREIGN KEY (`curp`) REFERENCES `egresado` (`curp`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `oferta_trabajo_ibfk_2` FOREIGN KEY (`rfc`) REFERENCES `empresa` (`rfc`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `oferta_trabajo_ibfk_3` FOREIGN KEY (`id_solicitud`) REFERENCES `solicitud` (`id_solicitud`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `solicitud`
+--
+ALTER TABLE `solicitud`
+  ADD CONSTRAINT `solicitud_ibfk_1` FOREIGN KEY (`id_carrera`) REFERENCES `carreras` (`id_carrera`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `solicitud_ibfk_2` FOREIGN KEY (`id_conocimientos`) REFERENCES `conocimientos` (`id_conocimientos`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `solicitud_ibfk_3` FOREIGN KEY (`id_aptitud`) REFERENCES `aptitudes` (`id_aptitud`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
