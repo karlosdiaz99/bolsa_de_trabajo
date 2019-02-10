@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-02-2019 a las 10:40:06
+-- Tiempo de generación: 10-02-2019 a las 09:38:36
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.1.11
 
@@ -46,6 +46,28 @@ CREATE TABLE `accesos` (
   `sesion` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `accesos`
+--
+
+INSERT INTO `accesos` (`id`, `nombre`, `apellido_paterno`, `apellido_materno`, `nombre_empresa`, `perfil`, `nombre_acceso`, `clave`, `num_control`, `email`, `curp`, `rfc`, `fecha_alta`, `activo`, `sesion`) VALUES
+(1, 'CARLOS IVAN', 'DIAZ', 'CONTRERAS', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', '12161263', 'KARLOSDIAZ170@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-09', 0, 0),
+(2, '', '', '', 'PANADERIA DOÃ‘A IRMA', 'empresa', 'DICC940831GA6', '70a67cfda6ec3007b11f12758bda3248', '', 'MELISSADIAZ10599@GMAIL.COM', '', 'DICC940831G', '2019-02-09', 0, 0),
+(3, 'MONICA', 'MARTINEZ', 'LOPEZ', '', 'egresado', 'AAAM860416MGRLDY04', '8daee5f5e98a84f9e1ea0d8757482c61', '12161245', 'MONY@GMAIL.COM', 'AAAM860416MGRLDY04', '', '2019-02-10', 0, 0),
+(4, 'MARTIN', 'SOTO', 'AGUIRRE', '', 'egresado', 'BARC820530HGRRMH06', '6c4a10684b6b5caf3d8a8301f6469f04', '12161314', 'MARTINSOTO@GMAIL.COM', 'BARC820530HGRRMH06', '', '2019-02-10', 0, 0),
+(5, 'CESAR', 'RAMIREZ', 'CAMILO', '', 'egresado', 'CARC920814HGRBMR07', '552d97d0397bd068d653826855647bf1', '13161416', 'CAMILORAM@HOTMAIL.COM', 'CARC920814HGRBMR07', '', '2019-02-10', 0, 0),
+(6, 'EMMANUEL ALEJANDRO', 'MENDEZ', 'MORALES', '', 'egresado', 'EAMM730408HSESNN00', '7c37e710525dbb21b107af7c54f1c0a4', '13164585', 'ALEMANNU@GMAIL.COM', 'EAMM730408HSESNN00', '', '2019-02-10', 0, 0),
+(7, 'FERNANDA ADA', 'HERNANDEZ', 'LOPEZ', '', 'egresado', 'FOCR841122HGRLTL04', '5934eb3b414313702c9d368c8fa4044b', '14165231', 'ADA@HOTMAIL.COM', 'FOCR841122HGRLTL04', '', '2019-02-10', 0, 0),
+(8, 'GABRIEL', 'ALEMAN', 'YEZCAS', '', 'egresado', 'GAAY871109MGRRRN03', '90c4fac24a9292510dc29fa46aeaba39', '11162589', 'YEZCASALEMAN@YAHOO.COM', 'GAAY871109MGRRRN03', '', '2019-02-10', 0, 0),
+(9, 'JESUS', 'GONZALES', 'MARCELO', '', 'egresado', 'GOMJ630427HSENRS00', '50441885ec601b8ff544557257c9258b', '15161478', 'MARCELINO@HOTMAIL.COM', 'GOMJ630427HSENRS00', '', '2019-02-10', 0, 0),
+(10, 'NORMA ANGELICA', 'HERNAN', 'CORTES', '', 'egresado', 'HEFN800505MGRRGR13', '98987e28ea71b10f8234b47a4dc4a423', '13165836', 'NORMITA@HOTMAIL.COM', 'HEFN800505MGRRGR13', '', '2019-02-10', 0, 0),
+(11, 'PEDRO CAMILO', 'LORENZO', 'URUZA', '', 'egresado', 'LUPC800526MGRCTR08', '5a04f8f070dcc025c03e901e4c3f2d69', '14169632', 'URUZAZUZA@GMAIL.COM', 'LUPC800526MGRCTR08', '', '2019-02-10', 0, 0),
+(12, '', '', '', 'MEDICAMENTOS HOMEOPATICOS DEL SIGLO', 'empresa', 'MALR751207000', '6b58cc3933a45fc1ee8a83f55f1b06a3', '', 'MEDICASOGLO@HOTMAIL.COM', '', 'MALR7512070', '2019-02-10', 0, 0),
+(13, '', '', '', 'MANTENIMIENTOS MECANICOS AGUIRRE', 'empresa', 'MAZC850716000', '930d51c561a33edd5e39aea9a64f63cb', '', 'MECAGUIRRE@HOTMAIL.COM', '', 'MAZC8507160', '2019-02-10', 0, 0),
+(14, '', '', '', 'ANTEQUERA OAXACA ARTICULOS CULTURALES', 'empresa', 'OAAB770620000', '8ba8f6b9648f438634de55f26cc84a1b', '', 'OAXACACULTURA@GMAIL.COM', '', 'OAAB7706200', '2019-02-10', 0, 0),
+(15, '', '', '', 'HOTEL PLAZUELA OAXAQUEÃ‘A', 'empresa', 'PAAC850222000', 'a1362bf90c7ccb6c68f37461db6ff6d8', '', 'HOTELPLAZUELA@GMAIL.COM', '', 'PAAC8502221', '2019-02-10', 0, 0),
+(16, '', '', '', 'RESTAURANTE AGUILA GRIS', 'empresa', 'RAAG790921000', '0002ec982dc5a0010bd7454098a949bd', '', 'AGUILAGRIS@YAHOO.COM', '', 'RAAG7909210', '2019-02-10', 0, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -56,8 +78,24 @@ CREATE TABLE `aptitudes` (
   `id_aptitud` int(11) NOT NULL,
   `aptitud_meta` text NOT NULL,
   `fecha_alta` date NOT NULL,
-  `fecha_modificacion` date NOT NULL
+  `fecha_modificacion` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `aptitudes`
+--
+
+INSERT INTO `aptitudes` (`id_aptitud`, `aptitud_meta`, `fecha_alta`, `fecha_modificacion`) VALUES
+(1, 'responsabilidad', '2019-02-09', '0000-00-00'),
+(2, 'eficiencia', '2019-02-09', '0000-00-00'),
+(3, 'ambición', '2019-02-09', '0000-00-00'),
+(4, 'contemporaneidad', '2019-02-09', '0000-00-00'),
+(5, 'liderazgo', '2019-02-09', '0000-00-00'),
+(6, 'manejo de grupos', '2019-02-09', '0000-00-00'),
+(7, 'negociación', '2019-02-09', '0000-00-00'),
+(8, 'trabajo en equipo', '2019-02-09', '0000-00-00'),
+(9, 'flexibilidad', '2019-02-09', '0000-00-00'),
+(10, 'discreción', '2019-02-09', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -69,7 +107,7 @@ CREATE TABLE `carreras` (
   `id_carrera` int(11) NOT NULL,
   `nombre` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `fecha_alta` date NOT NULL,
-  `fecha_modificacion` date NOT NULL
+  `fecha_modificacion` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -32229,18 +32267,18 @@ INSERT INTO `codigos_postales` (`cp`, `colonia`, `municipio`, `estado`) VALUES
 --
 
 CREATE TABLE `cod_lenguaje_pais` (
-  `idx` int(10) UNSIGNED NOT NULL,
+  `id_idioma` int(11) UNSIGNED NOT NULL,
   `cod_LP` varchar(5) DEFAULT NULL,
   `descripcion` varchar(60) DEFAULT NULL,
   `fecha_alta` date NOT NULL,
-  `fecha_modificacion` date NOT NULL
+  `fecha_modificacion` date DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `cod_lenguaje_pais`
 --
 
-INSERT INTO `cod_lenguaje_pais` (`idx`, `cod_LP`, `descripcion`, `fecha_alta`, `fecha_modificacion`) VALUES
+INSERT INTO `cod_lenguaje_pais` (`id_idioma`, `cod_LP`, `descripcion`, `fecha_alta`, `fecha_modificacion`) VALUES
 (1, 'ar', 'Árabe', '0000-00-00', '0000-00-00'),
 (2, 'be', 'bielorruso', '0000-00-00', '0000-00-00'),
 (3, 'be_BY', 'bielorruso [Bielorrusia]', '0000-00-00', '0000-00-00'),
@@ -32296,8 +32334,19 @@ CREATE TABLE `conocimientos` (
   `id_conocimientos` int(11) NOT NULL,
   `conocimiento_meta` text NOT NULL,
   `fecha_alta` date NOT NULL,
-  `fecha_modificacion` date NOT NULL
+  `fecha_modificacion` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `conocimientos`
+--
+
+INSERT INTO `conocimientos` (`id_conocimientos`, `conocimiento_meta`, `fecha_alta`, `fecha_modificacion`) VALUES
+(1, 'calculo', '2019-02-09', '0000-00-00'),
+(2, 'manejo de paqueteria office', '2019-02-09', '0000-00-00'),
+(3, 'contabilidad', '2019-02-09', '0000-00-00'),
+(4, 'literatura', '2019-02-09', '0000-00-00'),
+(5, 'manejo de vehiculos', '2019-02-09', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -32322,10 +32371,23 @@ CREATE TABLE `curriculum` (
   `curp` varchar(20) NOT NULL,
   `fecha_registro` date NOT NULL,
   `id_carrera` int(11) NOT NULL,
-  `idx` int(11) NOT NULL,
+  `id_idioma` int(11) NOT NULL,
   `id_conocimientos` int(11) NOT NULL,
-  `id_aptitud` int(11) NOT NULL
+  `id_aptitud` int(11) NOT NULL,
+  `id_sexo` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `curriculum`
+--
+
+INSERT INTO `curriculum` (`id_curriculum`, `primaria`, `secundaria`, `bachillerato`, `empresa1`, `periodo1`, `salario1`, `empresa2`, `periodo2`, `salario2`, `empresa3`, `periodo3`, `salario3`, `curp`, `fecha_registro`, `id_carrera`, `id_idioma`, `id_conocimientos`, `id_aptitud`, `id_sexo`) VALUES
+(7, 'GRAL. VICENTE GUERRERO', 'SECUNDARIA TECNICA 152', 'COBAO DE ETLA', 'CINEPOLIS', '2000', '5222', 'TEC', '2016', '4520', 'GRUMA', '2019', '20000', 'DICC940831HOCZNR04', '2019-02-10', 8, 16, 5, 2, 'femenino'),
+(8, 'GRAL. VICENTE GUERRERO', 'TECNICA 152', 'CONALEP', 'AAAAA', '2015', '540', 'MORX', '2016', '528', 'SUSSSE', '2019', '20000', 'AAAM860416MGRLDY04', '2019-02-10', 1, 1, 1, 1, 'femenino'),
+(9, 'VICENTE GUERRERO', 'TECNICA 152', 'COBAO DE ETLA', 'ASASAS', '2010', '5222', 'FOD', '2000-2001', '500', 'LUDCI', '2014', '635', 'BARC820530HGRRMH06', '2019-02-10', 2, 2, 2, 2, 'masculino'),
+(10, 'VICENTE GUERRERO', 'TECNICA 152', 'COBAO DE ETLA', 'AAAAA', '2018-2019', '200', 'HOLA', '2000-2001', '200', 'TRES', '2014', '450', 'CARC920814HGRBMR07', '2019-02-10', 25, 44, 4, 10, 'ambos'),
+(11, 'LA LUz', 'FEDERAL EDI MEXICO', 'BACHILLERATO MILITAR', 'CINEPOLIS', '2000', '5000', 'LOOOND', '2014', '4520', 'LUDCI', '2017', '20000', 'EAMM730408HSESNN00', '2019-02-10', 24, 43, 2, 9, 'masculino'),
+(12, 'MEDINA', 'MAS CONOCIMIENTOS', 'ESCUELA PATRIARCADA', 'STARBUCKS', '2003', '2000', 'CELSIUZ', '2010', '5000', 'INEGI', '2015', '10000', 'LUPC800526MGRCTR08', '2019-02-10', 20, 8, 3, 6, 'masculino');
 
 -- --------------------------------------------------------
 
@@ -32351,6 +32413,18 @@ CREATE TABLE `egresado` (
   `fecha_registro` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `egresado`
+--
+
+INSERT INTO `egresado` (`curp`, `edad`, `sexo`, `estado_civil`, `codigo_postal`, `calle`, `numero`, `colonia`, `municipio`, `estado`, `telefono`, `imagen_perfil`, `titulacion`, `generacion`, `fecha_registro`) VALUES
+('AAAM860416MGRLDY04', '33', 'femenino', 'casado', '22015', 'RIO BRAVO', '98', 'RevoluciÃƒÂ³n', 'Tijuana', 'Baja California', '698523654', '/imagen_perfil/OURBODY.png', 'si', '2010-2015', '2019-02-10'),
+('BARC820530HGRRMH06', '37', 'masculino', 'soltero', '01270', 'gorrion', '58', 'El Tejocote', 'Ãlvaro ObregÃ³n', 'Ciudad de MÃ©xico', '9514056321', '/imagen_perfil/OURBODY.png', 'si', '2014-2019', '2019-02-10'),
+('CARC920814HGRBMR07', '27', 'masculino', 'soltero', '01708', 'juarez', '8', 'El Encino del Pueblo Tetelpan', 'Ãlvaro ObregÃ³n', 'Ciudad de MÃ©xico', '555698742', '/imagen_perfil/23823263-illustration-of-a-doctor-in-front-of-the-hospital.jpg', 'si', '2010-2015', '2019-02-10'),
+('DICC940831HOCZNR04', '25', 'masculino', 'casado', '68234', 'halcon', '8', 'San Juan Bautista Guelache', 'San Juan Bautista Guelache', 'Oaxaca', '9514082266', '/imagen_perfil/OURBODY.png', 'no', '2010-2015', '2019-02-09'),
+('EAMM730408HSESNN00', '46', 'masculino', 'union', '55983', 'halcon', '98', 'El Abrojal o Barranquillas', 'Temascalapa', 'MÃ©xico', '9513578256', '/imagen_perfil/49039903_2265746246782762_8311870772805107712_n.jpg', 'si', '2010-2015', '2019-02-10'),
+('LUPC800526MGRCTR08', '39', 'masculino', 'soltero', '55870', 'independencia', '98', 'La Virgen', 'Acolman', 'MÃ©xico', '1487478', '/imagen_perfil/16998876_1405170616212082_8122289096857084767_n.jpg', 'no', '2014-2019', '2019-02-10');
+
 -- --------------------------------------------------------
 
 --
@@ -32359,7 +32433,6 @@ CREATE TABLE `egresado` (
 
 CREATE TABLE `empresa` (
   `rfc` varchar(11) NOT NULL,
-  `nombre_empresa` text NOT NULL,
   `giro` text NOT NULL,
   `codigo_postal` text NOT NULL,
   `numero` text NOT NULL,
@@ -32379,6 +32452,14 @@ CREATE TABLE `empresa` (
   `fecha_alta` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `empresa`
+--
+
+INSERT INTO `empresa` (`rfc`, `giro`, `codigo_postal`, `numero`, `calle`, `colonia`, `municipio`, `estado`, `responsable`, `apellido_paterno_r`, `apellido_materno_r`, `puesto_responsable`, `telefono`, `email`, `pagina_web`, `logotipo`, `convenio`, `fecha_alta`) VALUES
+('DICC940831G', 'VENTA DE PRODUCTOS COMESTIBLES', '71265', '854', 'independencia', 'El Calvario', 'San Pablo Huixtepec', 'Oaxaca', 'JUAN CARLOS', 'DIAZ', 'DIAZ', 'GERENTE GENERAL', '9514056321', '', 'WWW.PANADERIA.COM', '../Empresa/imagenes_logos/OURBODY.png', 'no', '2019-02-09'),
+('MALR7512070', 'VENTA DE MEDICAMENTOS ', '57188 ', '58', 'independencia', 'AmpliaciÃƒÂ³n Ciudad Lago Asa (Antonio Alzate)', 'NezahualcÃ³yotl', 'MÃ©xico', 'MIGUEL', 'LOPEZ', 'GUZMAN', 'SUPERVISOR', '5556987412', '', 'WWW,MEDICAMENTOS.COM', '../Empresa/imagenes_logos/23823263-illustration-of-a-doctor-in-front-of-the-hospital.jpg', 'no', '2019-02-10');
+
 -- --------------------------------------------------------
 
 --
@@ -32393,6 +32474,14 @@ CREATE TABLE `oferta_trabajo` (
   `fecha` date NOT NULL,
   `estatus` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `oferta_trabajo`
+--
+
+INSERT INTO `oferta_trabajo` (`id_oferta_trabajo`, `rfc`, `curp`, `id_solicitud`, `fecha`, `estatus`) VALUES
+(1, 'DICC940831G', 'DICC940831HOCZNR04', 4, '2019-02-10', '0'),
+(2, 'DICC940831G', 'LUPC800526MGRCTR08', 4, '2019-02-10', '0');
 
 -- --------------------------------------------------------
 
@@ -32412,10 +32501,19 @@ CREATE TABLE `solicitud` (
   `experiencia_lab` text NOT NULL,
   `titulacion` text NOT NULL,
   `id_aptitud` int(11) NOT NULL,
-  `idx` int(11) NOT NULL,
+  `id_idioma` int(11) NOT NULL,
   `id_conocimientos` int(11) NOT NULL,
-  `id_carrera` int(11) NOT NULL
+  `id_carrera` int(11) NOT NULL,
+  `id_sexo` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `solicitud`
+--
+
+INSERT INTO `solicitud` (`id_solicitud`, `rfc`, `fecha_alta`, `fecha_actualizacion`, `sueldo`, `Estatus`, `puesto`, `requerimiento`, `experiencia_lab`, `titulacion`, `id_aptitud`, `id_idioma`, `id_conocimientos`, `id_carrera`, `id_sexo`) VALUES
+(4, 'DICC940831G', '2019-02-10', NULL, '15000', '0', 'SUPERVISOR DE VENTAS', 'ESTO ES UNA PRUEBA', 'no', 'no', 2, 3, 5, 11, 'femenino'),
+(5, 'MALR7512070', '2019-02-10', NULL, '15000', '0', 'CAJERO', 'PERSONAL DE CAJERO', 'no', 'no', 8, 41, 5, 5, 'ambos');
 
 --
 -- Índices para tablas volcadas
@@ -32451,7 +32549,7 @@ ALTER TABLE `codigos_postales`
 -- Indices de la tabla `cod_lenguaje_pais`
 --
 ALTER TABLE `cod_lenguaje_pais`
-  ADD PRIMARY KEY (`idx`);
+  ADD PRIMARY KEY (`id_idioma`);
 
 --
 -- Indices de la tabla `conocimientos`
@@ -32467,7 +32565,7 @@ ALTER TABLE `curriculum`
   ADD KEY `curp` (`curp`),
   ADD KEY `id_aptitud` (`id_aptitud`),
   ADD KEY `id_conocimientos` (`id_conocimientos`),
-  ADD KEY `idx` (`idx`),
+  ADD KEY `idx` (`id_idioma`),
   ADD KEY `id_carrera` (`id_carrera`);
 
 --
@@ -32497,7 +32595,7 @@ ALTER TABLE `oferta_trabajo`
 ALTER TABLE `solicitud`
   ADD PRIMARY KEY (`id_solicitud`),
   ADD KEY `rfc` (`rfc`),
-  ADD KEY `idx` (`idx`),
+  ADD KEY `idx` (`id_idioma`),
   ADD KEY `id_aptitud` (`id_aptitud`),
   ADD KEY `id_conocimientos` (`id_conocimientos`),
   ADD KEY `id_carrera` (`id_carrera`);
@@ -32510,13 +32608,13 @@ ALTER TABLE `solicitud`
 -- AUTO_INCREMENT de la tabla `accesos`
 --
 ALTER TABLE `accesos`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `aptitudes`
 --
 ALTER TABLE `aptitudes`
-  MODIFY `id_aptitud` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_aptitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `carreras`
@@ -32528,25 +32626,25 @@ ALTER TABLE `carreras`
 -- AUTO_INCREMENT de la tabla `conocimientos`
 --
 ALTER TABLE `conocimientos`
-  MODIFY `id_conocimientos` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_conocimientos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `curriculum`
 --
 ALTER TABLE `curriculum`
-  MODIFY `id_curriculum` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_curriculum` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `oferta_trabajo`
 --
 ALTER TABLE `oferta_trabajo`
-  MODIFY `id_oferta_trabajo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_oferta_trabajo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `solicitud`
 --
 ALTER TABLE `solicitud`
-  MODIFY `id_solicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_solicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
@@ -32587,7 +32685,8 @@ ALTER TABLE `oferta_trabajo`
 ALTER TABLE `solicitud`
   ADD CONSTRAINT `solicitud_ibfk_1` FOREIGN KEY (`id_carrera`) REFERENCES `carreras` (`id_carrera`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `solicitud_ibfk_2` FOREIGN KEY (`id_conocimientos`) REFERENCES `conocimientos` (`id_conocimientos`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `solicitud_ibfk_3` FOREIGN KEY (`id_aptitud`) REFERENCES `aptitudes` (`id_aptitud`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `solicitud_ibfk_3` FOREIGN KEY (`id_aptitud`) REFERENCES `aptitudes` (`id_aptitud`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `solicitud_ibfk_4` FOREIGN KEY (`rfc`) REFERENCES `empresa` (`rfc`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
