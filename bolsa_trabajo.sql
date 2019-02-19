@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-02-2019 a las 21:02:51
+-- Tiempo de generación: 20-02-2019 a las 00:11:32
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.1.11
 
@@ -50,7 +50,7 @@ CREATE TABLE `accesos` (
 --
 
 INSERT INTO `accesos` (`id`, `nombre`, `apellido_paterno`, `apellido_materno`, `nombre_empresa`, `perfil`, `nombre_acceso`, `clave`, `email`, `curp`, `rfc`, `fecha_alta`, `activo`, `sesion`) VALUES
-(1, 'CARLOS IVAN', 'DIAZ', 'CONTRERAS', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', 'KARLOSDIAZ170@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-09', 0, 1),
+(1, 'CARLOS IVAN', 'DIAZ', 'CONTRERAS', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', 'KARLOSDIAZ170@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-09', 0, 0),
 (2, '', '', '', 'PANADERIA IRMA', 'empresa', 'DICC940831GA6', '70a67cfda6ec3007b11f12758bda3248', 'MELISSADIAZ10599@GMAIL.COM', '', 'DICC940831G', '2019-02-09', 0, 0),
 (3, 'MONICA', 'MARTINEZ', 'LOPEZ', '', 'egresado', 'AAAM860416MGRLDY04', '8daee5f5e98a84f9e1ea0d8757482c61', 'MONY@GMAIL.COM', 'AAAM860416MGRLDY04', '', '2019-02-10', 0, 0),
 (4, 'MARTIN', 'SOTO', 'AGUIRRE', '', 'egresado', 'BARC820530HGRRMH06', '6c4a10684b6b5caf3d8a8301f6469f04', 'MARTINSOTO@GMAIL.COM', 'BARC820530HGRRMH06', '', '2019-02-10', 0, 0),
@@ -68,7 +68,12 @@ INSERT INTO `accesos` (`id`, `nombre`, `apellido_paterno`, `apellido_materno`, `
 (16, '', '', '', 'RESTAURANTE AGUILA GRIS', 'empresa', 'RAAG790921000', '0002ec982dc5a0010bd7454098a949bd', 'AGUILAGRIS@YAHOO.COM', '', 'RAAG7909210', '2019-02-10', 0, 0),
 (17, 'PEDRO', 'CERVANTES', 'ERIZO', '', 'egresado', 'PACE811104MGRLRR09', '5051412d2860a4c742182566271441e5', 'CERVANTES@GMAIL.Com', 'PACE811104MGRLRR09', '', '2019-02-11', 0, 0),
 (19, '', '', '', 'SERVICIO DE TRANSPORTES POPEYE', 'empresa', 'ROMD830823000', '1a6eebae9720231e96abaf64de97feeb', 'SECURITYALFEREZ@GMAIL.COM', '', 'ROMD8308230', '2019-02-11', 0, 0),
-(20, 'RAUL ARAIZA', 'VELA', 'ELORA', '', 'egresado', 'VIGR851024MGRSRS07', '404f87eb48e2ab0fa57cf2f8f2cc4ada', '', 'VIGR851024MGRSRS07', '', '2019-02-11', 0, 0);
+(20, 'RAUL ARAIZA', 'VELA', 'ELORA', '', 'egresado', 'VIGR851024MGRSRS07', '404f87eb48e2ab0fa57cf2f8f2cc4ada', '', 'VIGR851024MGRSRS07', '', '2019-02-11', 0, 0),
+(21, 'ALEXIS', '', '', '', 'administrativo', 'DICC940831GA7', '773fc448c8d403daaf71717c771c4d9b', '', '', 'DICC940831G', '2019-02-19', 0, 0),
+(22, 'DIANA LAURA', 'ACOSTA', 'SEBASTIAN', '', 'egresado', 'SDAO951102MOCCBN08', 'b11ea33697988d3c932ae48ffd6c163c', '', 'SDAO951102MOCCBN08', '', '2019-02-19', 0, 0),
+(27, 'JUAN', 'LOPEZ', 'AGUIRRE', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', 'GHJK@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-19', 0, 0),
+(28, 'JUAN', 'LOPEZ', 'AGUIRRE', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', 'GHJK@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-19', 0, 0),
+(29, 'EMMANUEL ALEJANDRO', 'CUEVAS', 'ORTIZ', '', 'egresado', 'CUOE950425HOCVRM06', 'e653dbd278f72c16b07058b8eaea3f5f', 'ALEJANDROCUEVAS@GMAIL.COM', 'CUOE950425HOCVRM06', '', '2019-02-19', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -97,8 +102,7 @@ INSERT INTO `aptitudes` (`id_aptitud`, `aptitud_meta`, `fecha_alta`, `fecha_modi
 (7, 'Negociación', '2019-02-09', '0000-00-00'),
 (8, 'Trabajo en Equipo', '2019-02-09', '0000-00-00'),
 (9, 'Flexibilidad', '2019-02-09', '0000-00-00'),
-(10, 'Discreción', '2019-02-09', '0000-00-00'),
-(11, 'SALIOLO', '2019-02-14', NULL);
+(10, 'Discreción', '2019-02-09', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -32348,7 +32352,8 @@ INSERT INTO `conocimientos` (`id_conocimientos`, `conocimiento_meta`, `fecha_alt
 (3, 'contabilidad', '2019-02-09', '0000-00-00'),
 (4, 'literatura', '2019-02-09', '0000-00-00'),
 (5, 'manejo de vehiculos', '2019-02-09', '0000-00-00'),
-(6, 'MANEJO DE DISPOSITIVOS', '2019-02-14', NULL);
+(6, 'MANEJO DE DISPOSITIVOS', '2019-02-14', NULL),
+(7, '', '2019-02-18', NULL);
 
 -- --------------------------------------------------------
 
@@ -32384,12 +32389,13 @@ CREATE TABLE `curriculum` (
 --
 
 INSERT INTO `curriculum` (`id_curriculum`, `primaria`, `secundaria`, `bachillerato`, `empresa1`, `periodo1`, `salario1`, `empresa2`, `periodo2`, `salario2`, `empresa3`, `periodo3`, `salario3`, `curp`, `fecha_registro`, `id_carrera`, `id_idioma`, `id_conocimientos`, `id_aptitud`, `id_sexo`) VALUES
-(16, 'A', 'B', 'C', '1', '1', '1', '2', '2', '2', '3', '3', '3', 'DICC940831HOCZNR04', '2019-02-11', 9, 16, 3, 6, 'masculino'),
 (17, 'UNo', 'DOS', 'TRES', 'CUATRO', 'SIETE', '10', 'CINCO', 'OCHO', '10', 'SEIS', 'NUEVE', '10', 'EAMM730408HSESNN00', '2019-02-11', 5, 16, 3, 5, 'masculino'),
 (18, 'COLEGIO MUNDO MAGICO', 'COLEGIO TERECITA MARTIN', 'COBAO 57', 'HOTEL CASA BLANCA', '2005-2012', '5,500', 'BIMBO SA DE CV', '2012-2015', '7,800', 'TAQUERIAS EL CHUMBIA', '2016-2019', '12,500', 'BARC820530HGRRMH06', '2019-02-11', 1, 14, 3, 1, 'masculino'),
 (19, 'FEDERAL BENITO JUAREZ', 'TELESECUNDARIA 103', 'CEBETIS 123', 'CINEMEX', '2010', '3,000', 'ITALIAN COFFE', '2013', '3,500', 'GOLDEN CLIC', '2015', '5,00', 'AAAM860416MGRLDY04', '2019-02-11', 7, 11, 1, 6, 'masculino'),
 (20, 'PRIMARIA GUADALUPE VICTORIA', 'SECUNDARIA BENITO JUAREZ', 'COLEGIO MILITAR 123', '', '', '', '', '', '', '', '', '', 'CARC920814HGRBMR07', '2019-02-11', 16, 8, 5, 3, 'masculino'),
-(21, 'COLEGIO AGUSTÃN MARQUES HERNAN', 'TECNICA 152', 'COBAO DE ETLA', 'HOTEL VILLA REAL', '2012-2018', '22,000', '', '', '', '', '', '', 'LUPC800526MGRCTR08', '2019-02-11', 3, 14, 4, 4, 'femenino');
+(21, 'COLEGIO AGUSTÃN MARQUES HERNAN', 'TECNICA 152', 'COBAO DE ETLA', 'HOTEL VILLA REAL', '2012-2018', '22,000', '', '', '', '', '', '', 'LUPC800526MGRCTR08', '2019-02-11', 3, 14, 4, 4, 'femenino'),
+(22, 'MUNDO MAGICO', 'MUNDO MAGICO', 'TERECITA MARTIN', 'LIVERPOOL', '2000-2009', '10,000', 'ADO', '2010-2015', '35,000', 'TEC', '2016-2019', '50,000', 'HEFN800505MGRRGR13', '2019-02-18', 2, 10, 3, 5, 'femenino'),
+(23, 'VENUZTIANO CARRANZA', 'DOS', 'TRES', 'APPLE', '2018-2019', '50,00', 'AH', '2000-2001', '5214', 'SUSSSE', '2016-2019', '2455', 'CUOE950425HOCVRM06', '2019-02-19', 23, 15, 2, 4, 'femenino');
 
 -- --------------------------------------------------------
 
@@ -32424,10 +32430,11 @@ CREATE TABLE `egresado` (
 INSERT INTO `egresado` (`curp`, `edad`, `sexo`, `estado_civil`, `codigo_postal`, `carrera`, `calle`, `numero`, `colonia`, `municipio`, `estado`, `telefono`, `numero_control`, `imagen_perfil`, `titulacion`, `generacion`, `fecha_registro`) VALUES
 ('AAAM860416MGRLDY04', '33', 'femenino', 'casado', '22015', 7, 'RIO BRAVO', '98', 'RevoluciÃƒÆ’Ã‚Â³n', 'Tijuana', 'Baja California', '698523654', 0, '/imagen_perfil/OURBODY.png', 'si', '2010-2015', '2019-02-10'),
 ('BARC820530HGRRMH06', '37', 'masculino', 'soltero', '01270', 1, 'gorrion', '58', 'Golondrinas 2a SecciÃƒÂƒÃ‚Â³n', 'ÃƒÂlvaro ObregÃƒÂ³n', 'Ciudad de MÃƒÂ©xico', '9514056321', 12165263, '/imagen_perfil/OURBODY.png', 'si', '2014-2019', '2019-02-10'),
-('CARC920814HGRBMR07', '27', 'masculino', 'soltero', '01708', 16, 'juarez', '8', 'El Mirador del Pueblo Tetelpan', 'ÃƒÂlvaro ObregÃƒÂ³n', 'Ciudad de MÃƒÂ©xico', '555698742', 12151478, '/imagen_perfil/23823263-illustration-of-a-doctor-in-front-of-the-hospital.jpg', 'si', '2010-2015', '2019-02-10'),
-('DICC940831HOCZNR04', '25', 'masculino', 'casado', '68234', 9, 'halcon', '8', 'San Juan Bautista Guelache', 'San Juan Bautista Guelache', 'Oaxaca', '9514082266', 0, '/imagen_perfil/OURBODY.png', 'si', '2010-2015', '2019-02-09'),
-('EAMM730408HSESNN00', '46', 'masculino', 'union', '55983', 5, 'halcon', '98', 'El Abrojal o Barranquillas', 'Temascalapa', 'MÃƒÂ©xico', '9513578256', 0, '/imagen_perfil/49039903_2265746246782762_8311870772805107712_n.jpg', 'si', '2010-2015', '2019-02-10'),
-('LUPC800526MGRCTR08', '39', 'masculino', 'soltero', '55870', 3, 'independencia', '98', 'La Virgen', 'Acolman', 'MÃƒÂ©xico', '1487478', 0, '/imagen_perfil/16998876_1405170616212082_8122289096857084767_n.jpg', 'no', '2014-2019', '2019-02-10'),
+('CARC920814HGRBMR07', '27', 'masculino', 'soltero', '01708', 16, 'juarez', '8', 'El Mirador del Pueblo Tetelpan', 'ÃƒÂlvaro ObregÃƒÂ³n', 'Ciudad de MÃƒÂ©xico', '555698742', 12151478, '/imagen_perfil/OURBODY.png', 'si', '2010-2015', '2019-02-10'),
+('CUOE950425HOCVRM06', '24', 'masculino', 'casado', '68050', 23, 'PERU', '38', 'AmÃ©rica Norte', 'Oaxaca de Juï¿½rez', 'Oaxaca', '1446106', 12161263, '/imagen_perfil/OURBODY.png', 'no', '', '2019-02-19'),
+('EAMM730408HSESNN00', '46', 'masculino', 'union', '55983', 5, 'halcon', '98', 'El Abrojal o Barranquillas', 'Temascalapa', 'MÃƒÂ©xico', '9513578256', 0, '/imagen_perfil/OURBODY.png', 'si', '2010-2015', '2019-02-10'),
+('HEFN800505MGRRGR13', '39', 'femenino', 'casado', '68234', 2, 'LA REVOLUCION', '951', '{{option}}', 'San Pedro Pochutla', '{{ x.Estado }}', '9514056321', 15141658, '/imagen_perfil/OURBODY.png', 'si', '2012-2016', '2019-02-18'),
+('LUPC800526MGRCTR08', '39', 'masculino', 'soltero', '55870', 3, 'independencia', '98', 'La Virgen', 'Acolman', 'MÃƒÂ©xico', '1487478', 0, '/imagen_perfil/OURBODY.png', 'no', '2014-2019', '2019-02-10'),
 ('VIGR851024MGRSRS07', '34', 'masculino', 'casado', '71265', 5, 'HALCON', '951', 'Francisco I Madero', 'San Pablo Huixtepec', 'Oaxaca', '', 12165263, '/imagen_perfil/OURBODY.png', 'no', '2015-2020', '2019-02-13');
 
 -- --------------------------------------------------------
@@ -32489,15 +32496,11 @@ CREATE TABLE `oferta_trabajo` (
 --
 
 INSERT INTO `oferta_trabajo` (`id_oferta_trabajo`, `rfc`, `curp`, `id_solicitud`, `fecha`, `estatus`) VALUES
-(4, 'DICC940831G', 'DICC940831HOCZNR04', 4, '2019-02-11', '1'),
-(5, 'DICC940831G', 'DICC940831HOCZNR04', 6, '2019-02-11', '2'),
 (6, 'MALR7512070', 'EAMM730408HSESNN00', 5, '2019-02-11', '1'),
-(7, 'PAAC8502221', 'DICC940831HOCZNR04', 12, '2019-02-12', '2'),
 (8, 'PAAC8502221', 'EAMM730408HSESNN00', 12, '2019-02-12', '5'),
 (9, 'PAAC8502221', 'BARC820530HGRRMH06', 12, '2019-02-12', '2'),
 (10, 'PAAC8502221', 'AAAM860416MGRLDY04', 12, '2019-02-12', '2'),
-(11, 'PAAC8502221', 'CARC920814HGRBMR07', 12, '2019-02-12', '5'),
-(12, 'PAAC8502221', 'DICC940831HOCZNR04', 9, '2019-02-13', '3');
+(11, 'PAAC8502221', 'CARC920814HGRBMR07', 12, '2019-02-12', '5');
 
 -- --------------------------------------------------------
 
@@ -32630,13 +32633,13 @@ ALTER TABLE `solicitud`
 -- AUTO_INCREMENT de la tabla `accesos`
 --
 ALTER TABLE `accesos`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de la tabla `aptitudes`
 --
 ALTER TABLE `aptitudes`
-  MODIFY `id_aptitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_aptitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `carreras`
@@ -32648,19 +32651,19 @@ ALTER TABLE `carreras`
 -- AUTO_INCREMENT de la tabla `conocimientos`
 --
 ALTER TABLE `conocimientos`
-  MODIFY `id_conocimientos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_conocimientos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `curriculum`
 --
 ALTER TABLE `curriculum`
-  MODIFY `id_curriculum` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_curriculum` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de la tabla `oferta_trabajo`
 --
 ALTER TABLE `oferta_trabajo`
-  MODIFY `id_oferta_trabajo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_oferta_trabajo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `solicitud`
