@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-02-2019 a las 00:11:32
+-- Tiempo de generación: 20-02-2019 a las 19:04:25
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.1.11
 
@@ -50,8 +50,8 @@ CREATE TABLE `accesos` (
 --
 
 INSERT INTO `accesos` (`id`, `nombre`, `apellido_paterno`, `apellido_materno`, `nombre_empresa`, `perfil`, `nombre_acceso`, `clave`, `email`, `curp`, `rfc`, `fecha_alta`, `activo`, `sesion`) VALUES
-(1, 'CARLOS IVAN', 'DIAZ', 'CONTRERAS', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', 'KARLOSDIAZ170@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-09', 0, 0),
-(2, '', '', '', 'PANADERIA IRMA', 'empresa', 'DICC940831GA6', '70a67cfda6ec3007b11f12758bda3248', 'MELISSADIAZ10599@GMAIL.COM', '', 'DICC940831G', '2019-02-09', 0, 0),
+(1, 'CARLOS IVAN', 'DIAZ', 'CONTRERAS', '', 'egresado', 'DICC940831HOCZNR04', '78a2a009900cb218dfe2db1b7a278c5a', 'KARLOSDIAZ170@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-09', 0, 0),
+(2, '', '', '', 'PANADERIA IRMA', 'empresa', 'DICC940831GA6', '78a2a009900cb218dfe2db1b7a278c5a', 'MELISSADIAZ10599@GMAIL.COM', '', 'DICC940831G', '2019-02-09', 0, 0),
 (3, 'MONICA', 'MARTINEZ', 'LOPEZ', '', 'egresado', 'AAAM860416MGRLDY04', '8daee5f5e98a84f9e1ea0d8757482c61', 'MONY@GMAIL.COM', 'AAAM860416MGRLDY04', '', '2019-02-10', 0, 0),
 (4, 'MARTIN', 'SOTO', 'AGUIRRE', '', 'egresado', 'BARC820530HGRRMH06', '6c4a10684b6b5caf3d8a8301f6469f04', 'MARTINSOTO@GMAIL.COM', 'BARC820530HGRRMH06', '', '2019-02-10', 0, 0),
 (5, 'CESAR', 'RAMIREZ', 'CAMILO', '', 'egresado', 'CARC920814HGRBMR07', '552d97d0397bd068d653826855647bf1', 'CAMILORAM@HOTMAIL.COM', 'CARC920814HGRBMR07', '', '2019-02-10', 0, 0),
@@ -64,16 +64,15 @@ INSERT INTO `accesos` (`id`, `nombre`, `apellido_paterno`, `apellido_materno`, `
 (12, '', '', '', 'MEDICAMENTOS HOMEOPATICOS DEL SIGLO', 'empresa', 'MALR751207000', '6b58cc3933a45fc1ee8a83f55f1b06a3', 'MEDICASOGLO@HOTMAIL.COM', '', 'MALR7512070', '2019-02-10', 0, 0),
 (13, '', '', '', 'MANTENIMIENTOS MECANICOS AGUIRRE', 'empresa', 'MAZC850716000', '930d51c561a33edd5e39aea9a64f63cb', 'MECAGUIRRE@HOTMAIL.COM', '', 'MAZC8507160', '2019-02-10', 0, 0),
 (14, '', '', '', 'ANTEQUERA OAXACA ARTICULOS CULTURALES', 'empresa', 'OAAB770620000', '8ba8f6b9648f438634de55f26cc84a1b', 'OAXACACULTURA@GMAIL.COM', '', 'OAAB7706200', '2019-02-10', 0, 0),
-(15, '', '', '', 'HOTEL PLAZUELA OAXAQUEÃƒâ€˜A', 'empresa', 'PAAC850222000', 'a1362bf90c7ccb6c68f37461db6ff6d8', 'HOTELPLAZUELA@GMAIL.COM', '', 'PAAC8502221', '2019-02-10', 0, 0),
 (16, '', '', '', 'RESTAURANTE AGUILA GRIS', 'empresa', 'RAAG790921000', '0002ec982dc5a0010bd7454098a949bd', 'AGUILAGRIS@YAHOO.COM', '', 'RAAG7909210', '2019-02-10', 0, 0),
 (17, 'PEDRO', 'CERVANTES', 'ERIZO', '', 'egresado', 'PACE811104MGRLRR09', '5051412d2860a4c742182566271441e5', 'CERVANTES@GMAIL.Com', 'PACE811104MGRLRR09', '', '2019-02-11', 0, 0),
 (19, '', '', '', 'SERVICIO DE TRANSPORTES POPEYE', 'empresa', 'ROMD830823000', '1a6eebae9720231e96abaf64de97feeb', 'SECURITYALFEREZ@GMAIL.COM', '', 'ROMD8308230', '2019-02-11', 0, 0),
 (20, 'RAUL ARAIZA', 'VELA', 'ELORA', '', 'egresado', 'VIGR851024MGRSRS07', '404f87eb48e2ab0fa57cf2f8f2cc4ada', '', 'VIGR851024MGRSRS07', '', '2019-02-11', 0, 0),
 (21, 'ALEXIS', '', '', '', 'administrativo', 'DICC940831GA7', '773fc448c8d403daaf71717c771c4d9b', '', '', 'DICC940831G', '2019-02-19', 0, 0),
 (22, 'DIANA LAURA', 'ACOSTA', 'SEBASTIAN', '', 'egresado', 'SDAO951102MOCCBN08', 'b11ea33697988d3c932ae48ffd6c163c', '', 'SDAO951102MOCCBN08', '', '2019-02-19', 0, 0),
-(27, 'JUAN', 'LOPEZ', 'AGUIRRE', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', 'GHJK@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-19', 0, 0),
-(28, 'JUAN', 'LOPEZ', 'AGUIRRE', '', 'egresado', 'DICC940831HOCZNR04', 'd0d51b47e6ea428d336ea7bfea5935e5', 'GHJK@GMAIL.COM', 'DICC940831HOCZNR04', '', '2019-02-19', 0, 0),
-(29, 'EMMANUEL ALEJANDRO', 'CUEVAS', 'ORTIZ', '', 'egresado', 'CUOE950425HOCVRM06', 'e653dbd278f72c16b07058b8eaea3f5f', 'ALEJANDROCUEVAS@GMAIL.COM', 'CUOE950425HOCVRM06', '', '2019-02-19', 0, 0);
+(29, 'EMMANUEL ALEJANDRO', 'CUEVAS', 'ORTIZ', '', 'egresado', 'CUOE950425HOCVRM06', 'e653dbd278f72c16b07058b8eaea3f5f', 'ALEJANDROCUEVAS@GMAIL.COM', 'CUOE950425HOCVRM06', '', '2019-02-19', 0, 0),
+(30, 'MELINO', 'MONTEZ', 'DE OCA', '', 'egresado', 'DICC940831HOCZNR99', '64d2a50d7077f4de828ad16287e5789e', 'KARLOSDIAZ170@GMAIL.COM', 'DICC940831HOCZNR99', '', '2019-02-20', 0, 0),
+(31, 'ERNESTO', 'LOPEZ', 'MATINEZ', '', 'egresado', 'DICC940831HOCZNR74', 'fd7ea157dfb83d7cd158d060086c113c', 'CARLOSDIAZ170@GMAIL', 'DICC940831HOCZNR74', '', '2019-02-20', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -32389,13 +32388,16 @@ CREATE TABLE `curriculum` (
 --
 
 INSERT INTO `curriculum` (`id_curriculum`, `primaria`, `secundaria`, `bachillerato`, `empresa1`, `periodo1`, `salario1`, `empresa2`, `periodo2`, `salario2`, `empresa3`, `periodo3`, `salario3`, `curp`, `fecha_registro`, `id_carrera`, `id_idioma`, `id_conocimientos`, `id_aptitud`, `id_sexo`) VALUES
-(17, 'UNo', 'DOS', 'TRES', 'CUATRO', 'SIETE', '10', 'CINCO', 'OCHO', '10', 'SEIS', 'NUEVE', '10', 'EAMM730408HSESNN00', '2019-02-11', 5, 16, 3, 5, 'masculino'),
-(18, 'COLEGIO MUNDO MAGICO', 'COLEGIO TERECITA MARTIN', 'COBAO 57', 'HOTEL CASA BLANCA', '2005-2012', '5,500', 'BIMBO SA DE CV', '2012-2015', '7,800', 'TAQUERIAS EL CHUMBIA', '2016-2019', '12,500', 'BARC820530HGRRMH06', '2019-02-11', 1, 14, 3, 1, 'masculino'),
-(19, 'FEDERAL BENITO JUAREZ', 'TELESECUNDARIA 103', 'CEBETIS 123', 'CINEMEX', '2010', '3,000', 'ITALIAN COFFE', '2013', '3,500', 'GOLDEN CLIC', '2015', '5,00', 'AAAM860416MGRLDY04', '2019-02-11', 7, 11, 1, 6, 'masculino'),
+(17, 'UNo', 'DOS', 'TRES', 'CUATRO', 'SIETE', 'GERENTE', 'CINCO', 'OCHO', 'SUPERVISOR', 'SEIS', 'NUEVE', 'SUPERVISOR', 'EAMM730408HSESNN00', '2019-02-11', 5, 16, 3, 5, 'masculino'),
+(18, 'COLEGIO MUNDO MAGICO', 'COLEGIO TERECITA MARTIN', 'COBAO 57', 'HOTEL CASA BLANCA', '2005-2012', 'GERENTE', 'BIMBO SA DE CV', '2012-2015', 'ENCARGADO DE PRODUCCION', 'TAQUERIAS EL CHUMBIA', '2016-2019', 'CAJERO', 'BARC820530HGRRMH06', '2019-02-11', 1, 14, 3, 1, 'masculino'),
+(19, 'FEDERAL BENITO JUAREZ', 'TELESECUNDARIA 103', 'CEBETIS 123', 'CINEMEX', '2010', 'SUPERVISOR', 'ITALIAN COFFE', '2013', 'CAJERO', 'GOLDEN CLIC', '2015', 'SOCIO ', 'AAAM860416MGRLDY04', '2019-02-11', 7, 11, 1, 6, 'masculino'),
 (20, 'PRIMARIA GUADALUPE VICTORIA', 'SECUNDARIA BENITO JUAREZ', 'COLEGIO MILITAR 123', '', '', '', '', '', '', '', '', '', 'CARC920814HGRBMR07', '2019-02-11', 16, 8, 5, 3, 'masculino'),
-(21, 'COLEGIO AGUSTÃN MARQUES HERNAN', 'TECNICA 152', 'COBAO DE ETLA', 'HOTEL VILLA REAL', '2012-2018', '22,000', '', '', '', '', '', '', 'LUPC800526MGRCTR08', '2019-02-11', 3, 14, 4, 4, 'femenino'),
-(22, 'MUNDO MAGICO', 'MUNDO MAGICO', 'TERECITA MARTIN', 'LIVERPOOL', '2000-2009', '10,000', 'ADO', '2010-2015', '35,000', 'TEC', '2016-2019', '50,000', 'HEFN800505MGRRGR13', '2019-02-18', 2, 10, 3, 5, 'femenino'),
-(23, 'VENUZTIANO CARRANZA', 'DOS', 'TRES', 'APPLE', '2018-2019', '50,00', 'AH', '2000-2001', '5214', 'SUSSSE', '2016-2019', '2455', 'CUOE950425HOCVRM06', '2019-02-19', 23, 15, 2, 4, 'femenino');
+(21, 'COLEGIO AGUSTÃN MARQUES HERNAN', 'TECNICA 152', 'COBAO DE ETLA', 'HOTEL VILLA REAL', '2012-2018', 'TECNICO', '', '', '', '', '', '', 'LUPC800526MGRCTR08', '2019-02-11', 3, 14, 4, 4, 'femenino'),
+(22, 'MUNDO MAGICO', 'MUNDO MAGICO', 'TERECITA MARTIN', 'LIVERPOOL', '2000-2009', 'AGENTE DE VENTAS', 'ADO', '2010-2015', 'TECNICO INFORMATICO', 'TEC', '2016-2019', 'COORDINADOR', 'HEFN800505MGRRGR13', '2019-02-18', 2, 10, 3, 5, 'femenino'),
+(23, 'VENUZTIANO CARRANZA', 'DOS', 'TRES', 'APPLE', '2018-2019', 'TECNICO DE SEGURIDAD', 'AH', '2000-2001', 'SUPERVISOR', 'SUSSSE', '2016-2019', 'GERENTE', 'CUOE950425HOCVRM06', '2019-02-19', 23, 15, 2, 4, 'femenino'),
+(24, 'VENUZTIANO CARRANZA', 'SECUNDARIA TECNICA 152', 'ESCUELA PATRIARCADA', 'APPLE', '2010', 'TECNICO DE BASE DE DATOS', 'FOD', '2016', 'VENDEDOR', 'DOS', '2019', 'GERENTE', 'DICC940831HOCZNR04', '2019-02-20', 23, 10, 2, 4, 'masculino'),
+(25, 'GRAL. VICENTE GUERRERO', 'SECUNDARIA TECNICA 152', 'ESCUELA PATRIARCADA', 'BODY SOLID', '2015', 'ENTRENADOR', 'TIENDA MARTINEZ', '2018', 'ADMINISTRADOR', 'ALQUILERES ARANGO', '2019', 'TECNICO DE SEGURIDAD', 'DICC940831HOCZNR99', '2019-02-20', 23, 10, 2, 7, 'masculino'),
+(26, 'VENUZTIANO CARRANZA', 'SECUNDARIA TECNICA 152', 'ESCUELA PATRIARCADA', 'APPLE', '2010', 'GERENTE', 'TEC', '2000-2001', 'TECNICO', 'GRUMA', '2014', 'SUPERVISOR', 'DICC940831HOCZNR74', '2019-02-20', 18, 10, 4, 5, 'masculino');
 
 -- --------------------------------------------------------
 
@@ -32432,9 +32434,13 @@ INSERT INTO `egresado` (`curp`, `edad`, `sexo`, `estado_civil`, `codigo_postal`,
 ('BARC820530HGRRMH06', '37', 'masculino', 'soltero', '01270', 1, 'gorrion', '58', 'Golondrinas 2a SecciÃƒÂƒÃ‚Â³n', 'ÃƒÂlvaro ObregÃƒÂ³n', 'Ciudad de MÃƒÂ©xico', '9514056321', 12165263, '/imagen_perfil/OURBODY.png', 'si', '2014-2019', '2019-02-10'),
 ('CARC920814HGRBMR07', '27', 'masculino', 'soltero', '01708', 16, 'juarez', '8', 'El Mirador del Pueblo Tetelpan', 'ÃƒÂlvaro ObregÃƒÂ³n', 'Ciudad de MÃƒÂ©xico', '555698742', 12151478, '/imagen_perfil/OURBODY.png', 'si', '2010-2015', '2019-02-10'),
 ('CUOE950425HOCVRM06', '24', 'masculino', 'casado', '68050', 23, 'PERU', '38', 'AmÃ©rica Norte', 'Oaxaca de Juï¿½rez', 'Oaxaca', '1446106', 12161263, '/imagen_perfil/OURBODY.png', 'no', '', '2019-02-19'),
+('DICC940831HOCZNR04', '25', 'masculino', 'soltero', '68234', 23, 'HALCON', '8', 'San Juan Bautista Guelache', 'San Juan Bautista Guelache', 'Oaxaca', '1446106', 12165263, '/imagen_perfil/karlos_opt.jpg', 'no', '2012-2016', '2019-02-20'),
+('DICC940831HOCZNR74', '25', 'masculino', 'soltero', '68020', 18, 'LA REVOLUCION', '951', 'Volcanes', 'Oaxaca de Juï¿½rez', 'Oaxaca', '1487478', 15161216, '/imagen_perfil/OURBODY_opt.png', 'no', '2012-2016', '2019-02-20'),
+('DICC940831HOCZNR99', '25', 'masculino', 'casado', '71265', 23, 'INDEPENDENCIA', '1000', 'San Pablo Huixtepec', 'San Pablo Huixtepec', 'Oaxaca', '95140255', 12168563, '/imagen_perfil/images_opt.jpg', 'no', '2012-2016', '2019-02-20'),
 ('EAMM730408HSESNN00', '46', 'masculino', 'union', '55983', 5, 'halcon', '98', 'El Abrojal o Barranquillas', 'Temascalapa', 'MÃƒÂ©xico', '9513578256', 0, '/imagen_perfil/OURBODY.png', 'si', '2010-2015', '2019-02-10'),
 ('HEFN800505MGRRGR13', '39', 'femenino', 'casado', '68234', 2, 'LA REVOLUCION', '951', '{{option}}', 'San Pedro Pochutla', '{{ x.Estado }}', '9514056321', 15141658, '/imagen_perfil/OURBODY.png', 'si', '2012-2016', '2019-02-18'),
 ('LUPC800526MGRCTR08', '39', 'masculino', 'soltero', '55870', 3, 'independencia', '98', 'La Virgen', 'Acolman', 'MÃƒÂ©xico', '1487478', 0, '/imagen_perfil/OURBODY.png', 'no', '2014-2019', '2019-02-10'),
+('SDAO951102MOCCBN08', '24', 'femenino', 'soltero', '71265', 22, 'INDEPENDENCIA', '98', 'La Soledad', 'San Pablo Huixtepec', 'Oaxaca', '9514082266', 12162589, '/imagen_perfil/4_opt.jpg', 'no', '2012-2016', '2019-02-20'),
 ('VIGR851024MGRSRS07', '34', 'masculino', 'casado', '71265', 5, 'HALCON', '951', 'Francisco I Madero', 'San Pablo Huixtepec', 'Oaxaca', '', 12165263, '/imagen_perfil/OURBODY.png', 'no', '2015-2020', '2019-02-13');
 
 -- --------------------------------------------------------
@@ -32473,7 +32479,6 @@ INSERT INTO `empresa` (`rfc`, `giro`, `codigo_postal`, `numero`, `calle`, `colon
 ('MALR7512070', 'VENTA DE MEDICAMENTOS ', '57188 ', '58', 'independencia', 'AmpliaciÃƒÆ’Ã‚Â³n Ciudad Lago Asa (Antonio Alzate)', 'NezahualcÃƒÂ³yotl', 'MÃƒÂ©xico', 'MIGUEL', 'LOPEZ', 'GUZMAN', 'SUPERVISOR', '5556987412', '', 'WWW,MEDICAMENTOS.COM', '../Empresa/imagenes_logos/23823263-illustration-of-a-doctor-in-front-of-the-hospital.jpg', 'no', '2019-02-10'),
 ('MAZC8507160', 'REPARACION DE EQUIPOS MECANICOS', '57620', '1254', 'Gandhi', 'MÃƒÂƒÃ‚Â©xico Primera SecciÃƒÂƒÃ‚Â³n', 'NezahualcÃƒÂ³yotl', 'MÃƒÂ©xico', 'MAURICIO', 'AGUIRRE', 'MARIN', 'SUPERVISOR DE EQUIPOS DIGITALES', '5874569632', '', 'WWW.EQUIPOSAGUIRRE.COM', '../Empresa/imagenes_logos/OURBODY.png', 'no', '2019-02-11'),
 ('OAAB7706200', 'VENTA AL MAYOREO DE PRODUCTOS OAXAQUEÃ‘OS', '68207', '500', 'VENUSTIANO CARRANZA', 'San Mateo Sosola', 'San JerÃƒÂ³nimo Sosola', 'Oaxaca', 'MEREDID', 'GUITIERREZ', 'MACEDONIO', 'GERENTE GENERAL', '95102589632', '', 'WWW.OAXACACULTURA.COM', '../Empresa/imagenes_logos/OURBODY.png', 'si', '2019-02-11'),
-('PAAC8502221', 'SERVICIOS HOTELEROS ', '68290 ', '125', 'LA REVOLUCION', 'San Agustin Yatareni', 'San AgustÃƒÂ­n Yatareni', 'Oaxaca', 'LIDIA', 'MARQUEZ', 'ALMENDAÃ‘O', 'GERENTE GENERAL ', '9516823459', '', 'WWW.HOTELPLAZUELA.COM', '../Empresa/imagenes_logos/OURBODY.png', 'si', '2019-02-11'),
 ('ROMD8308230', 'RENTA DE TRANSPORTES ', '81066', '254', 'CRESPO', '18 de Marzo', 'Guasave', 'Sinaloa', 'LORENZO', 'MENDOZA', 'MARIN', 'SUPERVISOR DE AUTOMOVILES', '6548526464', '', 'WWW.GASAVE.COM', '../Empresa/imagenes_logos/OURBODY.png', 'no', '2019-02-11');
 
 -- --------------------------------------------------------
@@ -32496,11 +32501,7 @@ CREATE TABLE `oferta_trabajo` (
 --
 
 INSERT INTO `oferta_trabajo` (`id_oferta_trabajo`, `rfc`, `curp`, `id_solicitud`, `fecha`, `estatus`) VALUES
-(6, 'MALR7512070', 'EAMM730408HSESNN00', 5, '2019-02-11', '1'),
-(8, 'PAAC8502221', 'EAMM730408HSESNN00', 12, '2019-02-12', '5'),
-(9, 'PAAC8502221', 'BARC820530HGRRMH06', 12, '2019-02-12', '2'),
-(10, 'PAAC8502221', 'AAAM860416MGRLDY04', 12, '2019-02-12', '2'),
-(11, 'PAAC8502221', 'CARC920814HGRBMR07', 12, '2019-02-12', '5');
+(6, 'MALR7512070', 'EAMM730408HSESNN00', 5, '2019-02-11', '1');
 
 -- --------------------------------------------------------
 
@@ -32536,9 +32537,7 @@ INSERT INTO `solicitud` (`id_solicitud`, `rfc`, `fecha_alta`, `fecha_actualizaci
 (6, 'DICC940831G', '2019-02-11', NULL, '5555', '0', 'PRUEBA 2000', 'PRUEBA DE PRUEBA', 'si', 'no', 6, 18, 3, 16, 'masculino'),
 (7, 'MAZC8507160', '2019-02-11', NULL, '20,000', '0', 'MECANICOS DIGITALES', 'SOLICITAMOS INGENIEROS MECANICOS QUE PUEDAN MANEJAR RECURSOS DIGITALES EN AUTOMOVILES', 'no', 'no', 8, 10, 5, 21, 'ambos'),
 (8, 'OAAB7706200', '2019-02-11', NULL, '15,000', '0', 'ADMINISTRADOR DE RECURSOS HUMANOS', 'SOLICITUD PARA INGENIEROS DE GESTION EMPRESARIAN QUE CUENTEN CON FACILIDAD DE TRATO PERSONAL Y CONOCIMIENTOS EN EL AREA DE VENTAS', 'no', 'no', 7, 10, 2, 17, 'ambos'),
-(9, 'PAAC8502221', '2019-02-11', NULL, '35,000', '0', 'GERENTE GENERAL', 'PERSONAL PARA EL MANEJO DE EQUIPOS DIGITALES DEL HOTEL PLAZUELA', 'si', 'si', 5, 11, 3, 22, 'femenino'),
-(11, 'ROMD8308230', '2019-02-11', NULL, '18,230', '0', 'SUPERVISOR DE EQUIPOS DE RASTREO', 'INGENIEROS ENCARGADOS DEL MANEJO DE DISPOSITIVOS DE RASTREO E IMPLANTACION DEL MISMO', 'si', 'si', 8, 8, 5, 23, 'ambos'),
-(12, 'PAAC8502221', '2019-02-12', NULL, '10000', '5', 'SUPERVISOR', 'PREBA DE SOLICITUD ESTATUS URGENTE', 'si', 'si', 8, 17, 3, 21, 'masculino');
+(11, 'ROMD8308230', '2019-02-11', NULL, '18,230', '0', 'SUPERVISOR DE EQUIPOS DE RASTREO', 'INGENIEROS ENCARGADOS DEL MANEJO DE DISPOSITIVOS DE RASTREO E IMPLANTACION DEL MISMO', 'si', 'si', 8, 8, 5, 23, 'ambos');
 
 --
 -- Índices para tablas volcadas
@@ -32633,7 +32632,7 @@ ALTER TABLE `solicitud`
 -- AUTO_INCREMENT de la tabla `accesos`
 --
 ALTER TABLE `accesos`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT de la tabla `aptitudes`
@@ -32657,19 +32656,19 @@ ALTER TABLE `conocimientos`
 -- AUTO_INCREMENT de la tabla `curriculum`
 --
 ALTER TABLE `curriculum`
-  MODIFY `id_curriculum` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id_curriculum` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de la tabla `oferta_trabajo`
 --
 ALTER TABLE `oferta_trabajo`
-  MODIFY `id_oferta_trabajo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_oferta_trabajo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `solicitud`
 --
 ALTER TABLE `solicitud`
-  MODIFY `id_solicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_solicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Restricciones para tablas volcadas
